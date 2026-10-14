@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>meetdigitalart — 디지털 아트 수업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+  :root{--accent:#F5B316;--ink:#0D0E12;--ink2:#15171D;--paper:#F2EFE7;--muted:#8E93A0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  body{background:#0D0E12;color:#F2EFE7;font-family:Pretendard,-apple-system,system-ui,sans-serif;
+    font-size:17px;line-height:1.85;word-break:keep-all;text-wrap:pretty;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{color:#FFD264}
+  ::selection{background:var(--accent);color:#0D0E12}
+</style>
+</helmet>
+
+<div data-scroll-root="true" style="width:100%">
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none">
+  <symbol id="pchar" viewBox="-14 -52 28 104" overflow="visible">
+    <path d="M-9 -46 L9 -46 L9 26 L0 44 L-9 26 Z" fill="#F5B316"></path>
+    <path d="M-9 26 L9 26 L0 44 Z" fill="#F2EFE7"></path>
+    <path d="M-3.4 38 L3.4 38 L0 44 Z" fill="#0D0E12"></path>
+    <path d="M-9 -46 L9 -46 L9 -40 L-9 -40 Z" fill="#F2EFE7" opacity=".85"></path>
+    <circle cx="-3.6" cy="-14" r="1.9" fill="#0D0E12"></circle>
+    <circle cx="3.6" cy="-14" r="1.9" fill="#0D0E12"></circle>
+    <path d="M-3.4 -6 q3.4 3.2 6.8 0" fill="none" stroke="#0D0E12" stroke-width="1.2" stroke-linecap="round"></path>
+    <path d="M-9 -2 q-13 4 -16 -8" fill="none" stroke="#F2EFE7" stroke-width="1.6" stroke-linecap="round"></path>
+    <path d="M9 -2 q13 4 16 -8" fill="none" stroke="#F2EFE7" stroke-width="1.6" stroke-linecap="round"></path>
+  </symbol>
+</svg>
+
+<section data-screen-label="01 히어로" data-hero="true" style="position:relative;height:360svh">
+  <div style="position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(1.4rem,4vh,2.4rem) 0">
+
+    <div style="max-width:82rem;margin:0 auto;width:100%;padding:0 clamp(1.25rem,4vw,3rem);display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;position:relative;z-index:4">
+      <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.02em">meetdigitalart</div>
+      <div style="display:flex;align-items:baseline;gap:clamp(1rem,2.5vw,1.75rem)">
+        <div style="font-size:.8rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase">Bergen County · Online</div>
+        <a href="https://instagram.com/meetdigitalart" target="_blank" rel="noopener" style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.04em;color:var(--accent);border-bottom:1px solid rgba(245,179,22,.4);padding-bottom:.1rem" style-hover="color:#FFD264;border-bottom-color:#FFD264">@meetdigitalart</a>
+      </div>
+    </div>
+
+    <div aria-hidden="true" style="position:absolute;inset:0;z-index:1;pointer-events:none">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="display:block;width:100%;height:100%">
+        <g data-hstage="true">
+          <g data-hworld="true" fill="none" stroke="#2C3040" stroke-width=".8">
+            <rect data-s="1" x="60" y="40" width="280" height="200"></rect>
+            <path data-s="1" d="M60 140 H340"></path>
+            <path data-s="1" d="M200 40 V240"></path>
+            <circle data-s="1" cx="200" cy="140" r="96" stroke="#F5B316" opacity=".5"></circle>
+            <path data-s="1" d="M104 236 L200 60 L296 236" stroke="#F5B316" opacity=".35"></path>
+          </g>
+          <g data-hclouds="true">
+            <g fill="#15171D" stroke="#2C3040" stroke-width=".8">
+              <path d="M-40 250 q26 -22 52 0 q30 -26 62 0 q28 -20 54 0 v60 h-168 z"></path>
+              <path d="M220 262 q24 -20 50 0 q28 -22 58 0 q26 -18 52 0 v56 h-160 z"></path>
+            </g>
+            <g fill="#0D0E12" stroke="#2C3040" stroke-width=".7" opacity=".9">
+              <path d="M40 286 q30 -24 60 0 q32 -26 66 0 q30 -22 60 0 q30 -22 62 0 v40 h-248 z"></path>
+            </g>
+          </g>
+          <g data-hchar="true">
+            <g transform="translate(200 150)">
+              <g data-charbody="true">
+                <path d="M-9 -46 L9 -46 L9 26 L0 44 L-9 26 Z" fill="#F5B316"></path>
+                <path d="M-9 26 L9 26 L0 44 Z" fill="#F2EFE7"></path>
+                <path d="M-3.4 38 L3.4 38 L0 44 Z" fill="#0D0E12"></path>
+                <path d="M-9 -46 L9 -46 L9 -40 L-9 -40 Z" fill="#F2EFE7" opacity=".85"></path>
+                <circle cx="-3.6" cy="-14" r="1.9" fill="#0D0E12"></circle>
+                <circle cx="3.6" cy="-14" r="1.9" fill="#0D0E12"></circle>
+                <path d="M-3.4 -6 q3.4 3.2 6.8 0" fill="none" stroke="#0D0E12" stroke-width="1.2" stroke-linecap="round"></path>
+                <path data-arm="l" d="M-9 -2 q-13 4 -16 -8" fill="none" stroke="#F2EFE7" stroke-width="1.6" stroke-linecap="round"></path>
+                <path data-arm="r" d="M9 -2 q13 4 16 -8" fill="none" stroke="#F2EFE7" stroke-width="1.6" stroke-linecap="round"></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div data-scrim="true" aria-hidden="true" style="position:absolute;inset:0;z-index:2;pointer-events:none;background:#0D0E12"></div>
+
+    <div data-htitle="true" style="max-width:82rem;margin:0 auto;width:100%;padding:0 clamp(1.25rem,4vw,3rem);position:relative;z-index:3;font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:.96;letter-spacing:-0.045em">
+      <div data-tl="0" style="font-size:clamp(2.1rem,7.2vw,6rem)">하나의 아이디어가</div>
+      <div data-tl="1" style="font-size:clamp(3.4rem,15.5vw,13rem);margin-left:-.02em">어디까지</div>
+      <div data-tl="2" style="font-size:clamp(2.1rem,7.2vw,6rem);text-align:right">갈 수 있는지</div>
+    </div>
+
+    <div style="max-width:82rem;margin:0 auto;width:100%;padding:0 clamp(1.25rem,4vw,3rem);display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;position:relative;z-index:4;flex-wrap:wrap">
+      <p data-hsub="true" style="color:var(--muted);font-size:clamp(.95rem,1.4vw,1.15rem);max-width:26rem">그림에서 애니메이션으로, 영상으로, 3D로</p>
+      <div style="display:flex;align-items:baseline;gap:1.25rem;flex-wrap:wrap">
+        <p data-charnote="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.68rem;letter-spacing:.05em;color:#7E8391">placeholder · pencil character</p>
+        <div data-cue="true" style="font-size:.78rem;letter-spacing:.16em;color:var(--muted)">SCROLL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="02 수업 인포 + 실적" style="background:var(--accent);color:var(--ink);padding:clamp(3.5rem,7vw,6rem) 0 clamp(4rem,9vw,7rem)">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="display:flex;flex-direction:column;gap:clamp(1.5rem,3vw,2.25rem);border-bottom:2px solid var(--ink);padding-bottom:clamp(1.75rem,4vw,2.75rem)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:clamp(1.5rem,3.5vw,3rem)">
+        <div>
+          <div data-rise="d:0" style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.14em;color:#6B4A00;margin-bottom:.6rem">누구를 위한 수업인가</div>
+          <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.15rem,1.9vw,1.5rem);line-height:1.3;letter-spacing:-.03em">High School Students<br>Grade 9+</div>
+        </div>
+        <div>
+          <div data-rise="d:0.09" style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.14em;color:#6B4A00;margin-bottom:.6rem">무엇을 배우는가</div>
+          <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.15rem,1.9vw,1.5rem);line-height:1.3;letter-spacing:-.03em">Digital Art · Animation<br>Motion Graphics · 3D</div>
+        </div>
+        <div>
+          <div data-rise="d:0.18" style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.14em;color:#6B4A00;margin-bottom:.6rem">왜 배우는가</div>
+          <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.15rem,1.9vw,1.5rem);line-height:1.3;letter-spacing:-.03em">Portfolio · Scholastic<br>TSA · College Preparation</div>
+        </div>
+      </div>
+      <div data-rise="d:0.27" style="display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;border-top:1px solid rgba(13,14,18,.22);padding-top:1.1rem">
+        <span style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.14em;color:#6B4A00">수업 형태</span>
+        <span style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.05rem,1.7vw,1.35rem);letter-spacing:-.03em">온라인 Zoom 1:1 수업 · 학원 출강 그룹 수업</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:clamp(2rem,5vw,4rem);margin-top:clamp(2.5rem,5vw,4rem)">
+      <div>
+        <div data-rise="rot:0.05" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.08;letter-spacing:-.035em;margin-bottom:.8rem">NYC digital<br>artist &amp; instructor</div>
+        <p style="font-size:.98rem;line-height:1.7;opacity:.72">현업에서 활동 중</p>
+      </div>
+      <div>
+        <div data-rise="rot:0.16" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.08;letter-spacing:-.035em;margin-bottom:.8rem">TSA national<br>finalist</div>
+        <p style="font-size:.98rem;line-height:1.7;opacity:.72">전국 대회 2개 부문 — Digital Video Production, Promotional Design</p>
+      </div>
+      <div>
+        <div data-rise="rot:0.27" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.08;letter-spacing:-.035em;margin-bottom:.8rem">Scholastic<br>지역 입상 다수</div>
+        <p style="font-size:.98rem;line-height:1.7;opacity:.72">digital painting 부문</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="03 Classes" style="background:var(--ink2);padding:clamp(4.5rem,10vw,8rem) 0">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;color:var(--accent);margin-bottom:clamp(1.5rem,3vw,2.5rem)">03</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);align-items:start;margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <h2 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:.98;letter-spacing:-.05em;font-size:clamp(2.4rem,7vw,5.4rem)" data-shift="-2">Classes</h2>
+      <p data-rise="r:0.05:0.06" style="color:var(--muted);max-width:32rem;align-self:end">프로그램 이름으로 나누지 않았습니다. 무엇을 만들어 어디에 낼 수 있는지를 기준으로 세 과정으로 묶었습니다. 시간과 기간은 면담에서 학생 상황에 맞춰 정합니다.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column">
+
+      <div data-rise="l:0:0.05" style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1rem,3vw,2.5rem);align-items:start;border-top:1px solid #2C3040;padding:clamp(1.5rem,3vw,2.25rem) 0">
+        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.12em;color:var(--accent);padding-top:.45rem">01</div>
+        <div>
+          <h3 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,3vw,2.2rem);line-height:1.15;letter-spacing:-.035em;margin-bottom:1rem">Visual Design &amp; Promotional Design</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:clamp(.75rem,2vw,2rem)">
+            <div>
+              <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem">TOOLS</div>
+              <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em">Photoshop · Illustrator</div>
+            </div>
+            <div>
+              <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem">결과물</div>
+              <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em;color:var(--accent)">TSA Promotional Design · Scholastic Design · Portfolio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-rise="u:0.08" style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1rem,3vw,2.5rem);align-items:start;border-top:1px solid #2C3040;padding:clamp(1.5rem,3vw,2.25rem) 0">
+        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.12em;color:var(--accent);padding-top:.45rem">02</div>
+        <div>
+          <h3 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,3vw,2.2rem);line-height:1.15;letter-spacing:-.035em;margin-bottom:1rem">Motion Graphics &amp; Film</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:clamp(.75rem,2vw,2rem)">
+            <div>
+              <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem">TOOLS</div>
+              <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em">After Effects · Premiere</div>
+            </div>
+            <div>
+              <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem">결과물</div>
+              <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em;color:var(--accent)">Scholastic Film · TSA Video Production · Video Essay</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-rise="r:0.16:0.06" style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1rem,3vw,2.5rem);align-items:start;border-top:1px solid #2C3040;border-bottom:1px solid #2C3040;padding:clamp(1.5rem,3vw,2.25rem) 0">
+        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.12em;color:var(--accent);padding-top:.45rem">03</div>
+        <div>
+          <h3 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,3vw,2.2rem);line-height:1.15;letter-spacing:-.035em;margin-bottom:1rem">3D &amp; Animation</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:clamp(.75rem,2vw,2rem)">
+            <div>
+              <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem">TOOLS</div>
+              <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em">Modeling · Texturing · Lighting · Animation</div>
+            </div>
+            <div>
+              <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem">결과물</div>
+              <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em;color:var(--accent)">Portfolio Project · Animation / Media Art Preparation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="04 그림 한 장으로는" style="padding:clamp(5rem,12vw,10rem) 0">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;color:var(--accent);margin-bottom:clamp(1.5rem,3vw,2.5rem)">04</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:clamp(2.5rem,6vw,5.5rem);align-items:start">
+      <div>
+        <h2 data-shift="2.4" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:1.0;letter-spacing:-.045em;font-size:clamp(2rem,5vw,3.9rem);margin-bottom:clamp(1.6rem,3vw,2.4rem)">그림 한 장으로는<br>남지 않습니다</h2>
+        <p style="color:var(--muted);max-width:34rem">대학이 보려는 것은 이 학생이 무엇에 관심이 있고 그것을 어디까지 밀고 갔는가입니다. 잘 그린 그림 한 장으로는 그 과정이 보이지 않습니다.</p>
+        <p style="color:var(--muted);max-width:34rem;margin-top:1.15rem">디지털 아트는 다릅니다. 하나의 아이디어가 애니메이션이 되고, 영상이 되고, 3D 오브젝트가 되고, 때로는 실물로 출력됩니다.</p>
+        <p style="max-width:34rem;margin-top:1.15rem"><em style="font-style:normal;box-shadow:inset 0 -.45em 0 rgba(245,179,22,.3)">그 과정이 전부 남습니다.</em> portfolio가 되기도 하고, 지원서에서 자기 이야기를 뒷받침하는 활동이 되기도 합니다.</p>
+      </div>
+      <div>
+        <div data-scrub="expand" data-charstage="true" style="cursor:pointer;border:1px solid #262932;background:var(--ink2);aspect-ratio:1/1">
+          <svg viewBox="0 0 200 200" style="display:block;width:100%;height:100%">
+            <g data-e="0"><rect x="70" y="70" width="60" height="60" fill="var(--paper)"></rect></g>
+            <g data-e="1"><rect x="70" y="70" width="60" height="60" fill="none" stroke="var(--accent)" stroke-width="1.2"></rect></g>
+            <g data-e="2"><rect x="70" y="70" width="60" height="60" fill="none" stroke="var(--accent)" stroke-width="1.2"></rect></g>
+            <g data-e="3"><rect x="70" y="70" width="60" height="60" fill="none" stroke="#8E93A0" stroke-width="1.2"></rect></g>
+            <g data-mini="true"><use href="#pchar" x="100" y="100" width="28" height="104" transform="translate(-14 -52)"></use></g>
+          </svg>
+        </div>
+        <p style="margin-top:.7rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;letter-spacing:.05em;color:#7E8391">placeholder · 하나의 아이디어가 네 개의 매체로 — 캐릭터를 클릭해 보세요</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="05 학생의 아이디어" style="background:var(--paper);color:var(--ink);padding:clamp(5rem,12vw,10rem) 0">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;color:#B8842C;margin-bottom:clamp(1.5rem,3vw,2.5rem)">05</div>
+    <h2 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:1.0;letter-spacing:-.045em;font-size:clamp(2.1rem,6vw,4.6rem);max-width:24ch;margin-bottom:clamp(2rem,4vw,3rem)" data-shift="-2.2">아이디어는<br>학생의 것입니다</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:clamp(1.5rem,5vw,4rem);max-width:64rem">
+      <p style="color:#4A4E58">주제를 정해주지 않습니다. 제가 하는 일은 그 아이디어를 가장 잘 살릴 도구와 방향을 잡아주는 것입니다. 어떤 tool이 이 생각에 맞는지, 어떤 스타일로 풀어야 의도가 전달되는지 제안하고, 학생이 스스로 풀어갈 수 있도록 review와 feedback을 이어갑니다.</p>
+      <p data-rise="r:0.05:0.06" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:clamp(1.15rem,2vw,1.6rem);line-height:1.5;letter-spacing:-.02em">먼저 그 길을 걸어본 사람이 옆에서 함께 만드는 방식입니다.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:clamp(3.5rem,8vw,7rem);margin-top:clamp(4rem,9vw,8rem)">
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);align-items:start;border-top:1px solid rgba(13,14,18,.16);padding-top:clamp(1.5rem,3vw,2.5rem)">
+        <div>
+          <h3 data-rise="l:0:0.07" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.15;letter-spacing:-.03em;margin-bottom:1rem">그림으로 푸는 경우</h3>
+          <p style="color:#4A4E58;max-width:32rem">매년 학생들이 Scholastic Art &amp; Writing Awards의 digital painting 부문에 출품하고 있고, 여러 명이 지역 입상했습니다.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;align-items:start">
+          <img data-rise="l:0:0.07" src="assets/painting/01-ladders.jpg" alt="구름 속 얼굴과 붉은 사다리들을 그린 digital painting" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+          <img data-rise="d:0.06" src="assets/painting/03-water-jar.jpg" alt="물이 담긴 유리병으로 얼굴을 가린 인물 digital painting" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+          <img data-rise="s:0.12" src="assets/painting/02-collage-portrait.jpg" alt="사진과 그래픽을 겹쳐 만든 자화상 collage" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+          <img data-rise="r:0.18:0.07" src="assets/painting/04-fisherman.jpg" alt="노년 어부를 그린 인물 습작" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);align-items:start;border-top:1px solid rgba(13,14,18,.16);padding-top:clamp(1.5rem,3vw,2.5rem)">
+        <div>
+          <h3 data-rise="rot:0" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.15;letter-spacing:-.03em;margin-bottom:1rem">단어 하나에서<br>시작한 애니메이션</h3>
+          <p style="color:#4A4E58;max-width:32rem">학생이 가져온 것은 자기가 생각하는 이야기의 단어 하나, 짧은 문장 하나였습니다.</p>
+          <p style="color:#4A4E58;max-width:32rem;margin-top:1.15rem">거기서 storyboard를 짜고 character design을 만들었습니다. 무엇을 보여줄지가 정해지자 어떻게 움직이고 어떻게 연결할지가 따라왔습니다. 지금은 첫 장면이 2D animation으로 완성된 상태입니다.</p>
+          <p style="max-width:32rem;margin-top:1.15rem">올해 Scholastic film &amp; animation 부문 출품을 목표로 이어가고 있습니다.</p>
+        </div>
+        <div data-rise="s:0.06" style="display:flex;flex-direction:column;gap:.75rem">
+          <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.7rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.65rem;color:#8B8779">storyboard</span></div>
+          <div data-rise="r:0.2:0.05" style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem">
+            <div style="aspect-ratio:1/1;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.65rem;color:#8B8779">character design</span></div>
+            <div style="aspect-ratio:1/1;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.65rem;color:#8B8779">완성 장면</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);align-items:start;border-top:1px solid rgba(13,14,18,.16);padding-top:clamp(1.5rem,3vw,2.5rem)">
+        <div>
+          <h3 data-rise="d:0" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.15;letter-spacing:-.03em;margin-bottom:1rem">생각을 영상으로</h3>
+          <p style="color:#4A4E58;max-width:32rem">뉴욕 타임즈가 주최한 학생 미디어 아트 경연대회 출품작입니다. 주제는 인공지능. 학생들은 각자 인공지능에 대해 어떻게 생각하는지를 영상으로 만들었습니다.</p>
+          <p style="color:#4A4E58;max-width:32rem;margin-top:1.15rem">한 가지 형식으로 통일하지 않았습니다. 인터뷰를 담은 작업도 있고, motion graphics로 개념을 풀어낸 작업도 있습니다. 같은 주제라도 무엇을 말하려는지에 따라 형식이 달라지기 때문입니다.</p>
+          <p style="max-width:32rem;margin-top:1.15rem">After Effects, Premiere Pro, Illustrator를 작업 목적에 맞춰 나눠 썼습니다.</p>
+        </div>
+        <div data-rise="r:0.08:0.06" style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem">
+          <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.62rem;color:#8B8779">motion graphics 루프</span></div>
+          <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.62rem;color:#8B8779">인터뷰 영상</span></div>
+          <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.62rem;color:#8B8779">타이틀 시퀀스</span></div>
+          <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.62rem;color:#8B8779">그래픽 컷</span></div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);align-items:start;border-top:1px solid rgba(13,14,18,.16);padding-top:clamp(1.5rem,3vw,2.5rem)">
+        <div>
+          <h3 data-rise="rot:0" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.15;letter-spacing:-.03em;margin-bottom:1rem">선수를 소개하는<br>첫 10초</h3>
+          <p style="color:#4A4E58;max-width:32rem">고등학교 양궁 선수 두 명의 프로모션 비디오, 그중 intro 작업입니다.</p>
+          <p style="color:#4A4E58;max-width:32rem;margin-top:1.15rem">본편이 시작되기 전에 두 선수가 누구인지를 짧게 각인시켜야 하는 구간입니다. 이름과 종목을 어떤 순서로 등장시킬지, 어느 리듬으로 끊을지가 이 작업의 내용이었습니다.</p>
+          <p style="max-width:32rem;margin-top:1.15rem">motion graphics로 만든 타이틀이 실제 경기 영상과 맞물리도록 편집했습니다.</p>
+        </div>
+        <div data-rise="s:0.06" style="display:flex;flex-direction:column;gap:.75rem">
+          <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.7rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.65rem;color:#8B8779">intro 루프</span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem">
+            <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.62rem;color:#8B8779">타이틀 프레임</span></div>
+            <div style="aspect-ratio:16/9;border:1px solid rgba(13,14,18,.14);background:repeating-linear-gradient(135deg,#E6E2D8 0 7px,#EDEAE1 7px 14px);display:flex;align-items:flex-end;padding:.6rem"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.62rem;color:#8B8779">경기 컷</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid rgba(13,14,18,.16);padding-top:clamp(1.5rem,3vw,2.5rem)">
+        <h3 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.04em;margin-bottom:clamp(1.5rem,3vw,2.5rem)">화면에서 실물로</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);max-width:70rem;margin-bottom:clamp(2.5rem,6vw,4.5rem)">
+          <div>
+            <p style="color:#4A4E58">2025 Ocean Awareness Contest 출품작. 학생이 설계한 것은 빗물을 받아 재활용해 나무와 풀, 꽃을 기르는 공간을 품은 교통 정거장이었습니다. 사람들이 잠시 머무는 쉘터와 식물이 자라는 공간을 하나의 구조 안에 넣은 건축 설계입니다.</p>
+            <p style="color:#4A4E58;margin-top:1.15rem">이 설계를 3D modeling으로 세우고 rendering 이미지로 만들었습니다. 그리고 3D printing으로 작은 스케일의 실물 모형까지 제작했습니다.</p>
+          </div>
+          <p data-rise="s:0.05" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:clamp(1.05rem,1.8vw,1.45rem);line-height:1.55;letter-spacing:-.02em">이 작업의 과정은 architectural visualization 분야에서 실제로 이루어지는 방식과 같습니다.</p>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:clamp(2.5rem,5vw,4rem)">
+
+          <div>
+            <div style="display:flex;align-items:baseline;gap:.85rem;margin-bottom:1rem;border-top:1px solid rgba(13,14,18,.16);padding-top:.9rem">
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.12em;color:#B8842C">01</span>
+              <span style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em">3D modeling</span>
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:.68rem;color:#8B8779">Maya · Blender</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.75rem">
+              <img data-rise="l:0:0.06" src="assets/3d/01-maya-modeling.jpg" alt="Maya에서 정거장 구조를 모델링하고 Arnold로 rendering 중인 화면" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+              <img data-rise="u:0.08" src="assets/3d/02-blender-model.jpg" alt="Blender viewport의 쉘터 모델과 식재 오브젝트" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+              <img data-rise="r:0.16:0.06" src="assets/3d/03-blender-lighting.jpg" alt="Blender에서 sun light와 재질을 설정하는 화면" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:clamp(1.25rem,3vw,2.5rem);align-items:start">
+            <div>
+              <div style="display:flex;align-items:baseline;gap:.85rem;margin-bottom:1rem;border-top:1px solid rgba(13,14,18,.16);padding-top:.9rem">
+                <span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.12em;color:#B8842C">02</span>
+                <span style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em">rendering board</span>
+              </div>
+              <img data-rise="l:0:0.05" src="assets/3d/04-rendering-board.jpg" alt="완성된 rendering 이미지 두 컷을 도면 위에 올린 제출용 board" style="display:block;width:100%;aspect-ratio:3/4;object-fit:contain;background:#E8E4DA;border:1px solid rgba(13,14,18,.14)" />
+            </div>
+            <div>
+              <div style="display:flex;align-items:baseline;gap:.85rem;margin-bottom:1rem;border-top:1px solid rgba(13,14,18,.16);padding-top:.9rem">
+                <span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.12em;color:#B8842C">03</span>
+                <span style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em">3D printing</span>
+              </div>
+              <img data-rise="r:0.07:0.05" src="assets/3d/05-printing.jpg" alt="3D printer로 쉘터 부품을 출력하는 중" style="display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;align-items:baseline;gap:.85rem;margin-bottom:1rem;border-top:2px solid var(--ink);padding-top:.9rem">
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.12em;color:#B8842C">04</span>
+              <span style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1rem,1.6vw,1.25rem);letter-spacing:-.02em">완성된 실물 모형</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.75rem">
+              <img data-rise="d:0" src="assets/3d/06-model-front.jpg" alt="3D printing으로 제작한 Green Shelter Design 모형 정면" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+              <img data-rise="s:0.09" src="assets/3d/07-model-side.jpg" alt="모형 측면 — 쉘터 아래 벤치와 나무" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+              <img data-rise="u:0.18" src="assets/3d/08-model-top.jpg" alt="모형 위에서 본 식재 공간" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid rgba(13,14,18,.14)" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="06 진로" style="padding:clamp(5rem,12vw,10rem) 0;position:relative;overflow:hidden">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);position:relative;z-index:2">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;color:var(--accent);margin-bottom:clamp(1.5rem,3vw,2.5rem)">06</div>
+    <h2 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:.98;letter-spacing:-.05em;font-size:clamp(2.2rem,7vw,5.6rem);margin-bottom:clamp(2.5rem,5vw,4rem)" data-shift="3">진로는 좁히는 것이<br>아니라 <span style="color:var(--accent)">넓히는 것</span>입니다</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:clamp(2rem,6vw,5rem);align-items:start">
+      <div>
+        <p style="color:var(--muted);max-width:34rem">광고 영상을 만들다 보면 예상하지 못한 분야에서 일하게 됩니다. 주사액이 몸에 들어가는 순간, 피부 아래에서 일어나는 변화, 아직 지어지지 않은 건물, 그리고 블랙홀. 눈으로 볼 수 없는 것을 보이게 만드는 일이고, 그 일을 하는 사람은 시각 작업을 하는 사람입니다.</p>
+        <p data-rise="r:0.08:0.07" style="max-width:34rem;margin-top:1.5rem;font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:clamp(1.05rem,1.8vw,1.45rem);line-height:1.55;letter-spacing:-.02em">진로를 미리 정하지 않아도 됩니다. 오히려 선택의 폭을 넓혀두는 자산이 됩니다.</p>
+      </div>
+      <div>
+        <div data-scrub="fan" data-charstage="true" style="cursor:pointer;border:1px solid #262932;background:var(--ink2);aspect-ratio:4/3;overflow:hidden">
+          <svg viewBox="0 0 200 150" style="display:block;width:100%;height:100%">
+            <g data-f="0" fill="none" stroke="var(--accent)" stroke-width="1.1"><path d="M100 130 L100 30"></path></g>
+            <g data-f="1" fill="none" stroke="var(--paper)" stroke-width="1.1" opacity=".7"><path d="M100 130 L100 30"></path></g>
+            <g data-f="2" fill="none" stroke="var(--paper)" stroke-width="1.1" opacity=".7"><path d="M100 130 L100 30"></path></g>
+            <g data-f="3" fill="none" stroke="#8E93A0" stroke-width="1.1" opacity=".55"><path d="M100 130 L100 30"></path></g>
+            <g data-f="4" fill="none" stroke="#8E93A0" stroke-width="1.1" opacity=".55"><path d="M100 130 L100 30"></path></g>
+            <circle cx="100" cy="130" r="3" fill="var(--accent)"></circle>
+            <g data-mini="true"><use href="#pchar" x="100" y="96" width="22" height="82" transform="translate(-11 -41)"></use></g>
+          </svg>
+        </div>
+        <p style="margin-top:.7rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;letter-spacing:.05em;color:#7E8391">placeholder · 하나의 출발점, 여러 도착점 — 캐릭터를 클릭해 보세요</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="07 어떤 학생" style="background:var(--accent);color:var(--ink);padding:clamp(5rem,12vw,10rem) 0">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;opacity:.55;margin-bottom:clamp(1.5rem,3vw,2.5rem)">07</div>
+    <h2 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:1.0;letter-spacing:-.045em;font-size:clamp(2rem,5.4vw,4.2rem);margin-bottom:clamp(2.5rem,5vw,4rem)" data-shift="-2.6">어떤 학생에게<br>맞는가</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:clamp(2rem,5vw,4rem);align-items:start">
+      <div>
+        <p data-rise="l:0:0.06" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:clamp(1.15rem,2.2vw,1.75rem);line-height:1.5;letter-spacing:-.025em">지금까지 함께한 학생들은 대부분 같은 지점에서 출발했습니다. 자기 아이디어를 눈에 보이게 만들고 싶다는 것.</p>
+      </div>
+      <div>
+        <p style="color:rgba(13,14,18,.72)">그림을 잘 그려야 하는 것은 아닙니다. 시각화의 방법은 그림만이 아닙니다. 3D modeling으로 형태를 세우는 학생도 있고, 영상 편집으로 이야기를 만드는 학생도 있습니다. 아이디어에 맞는 방법을 찾는 것이 수업의 첫 단계입니다.</p>
+        <p style="color:rgba(13,14,18,.72);margin-top:1.15rem">요즘 학생들에게 그 수단은 자연스럽게 디지털입니다. 컴퓨터와 태블릿이 이미 익숙한 세대이니까요. 문제는 도구가 너무 많다는 것입니다. 무엇을 써야 하는지, 지금 무엇이 쓰이고 있는지, 자기 아이디어에 어떤 방식이 맞는지. 혼자 알아내기 어렵습니다.</p>
+        <p style="margin-top:1.15rem">아직 무엇을 만들고 싶은지 모르는 학생도 있습니다. 그럴 때는 그것을 찾는 것부터 함께합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="08 강사" style="padding:clamp(5rem,12vw,10rem) 0">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;color:var(--accent);margin-bottom:clamp(1.5rem,3vw,2.5rem)">08</div>
+    <h2 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:.98;letter-spacing:-.05em;font-size:clamp(2.1rem,6.2vw,5rem);margin-bottom:clamp(2.5rem,5vw,3.5rem)" data-shift="2.8">NYC digital<br>artist &amp; <span style="color:var(--accent)">instructor</span></h2>
+    <div data-scrub="reel" data-charstage="true" style="cursor:pointer;border:1px solid #262932;background:var(--ink2);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
+      <svg viewBox="0 0 320 180" style="position:absolute;inset:0;width:100%;height:100%;opacity:.5">
+        <g data-r="0" fill="none" stroke="#2C3040" stroke-width="1"><path d="M0 90 H320"></path><path d="M160 0 V180"></path></g>
+        <rect data-r="1" x="130" y="65" width="60" height="50" fill="none" stroke="var(--accent)" stroke-width="1.1"></rect>
+        <g data-mini="true"><use href="#pchar" x="66" y="106" width="20" height="74" transform="translate(-10 -37)"></use></g>
+      </svg>
+      <div style="position:relative;z-index:2;text-align:center">
+        <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.06em;color:var(--accent)">REEL</div>
+        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;color:#7E8391;margin-top:.4rem">placeholder · 개인 작업 릴 60~90초 — 캐릭터를 클릭해 보세요</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:clamp(1.75rem,4vw,3.5rem);margin-top:clamp(2rem,4vw,3rem)">
+      <p style="color:var(--muted)">20년간 광고 영상, 3D 애니메이션, 모션 그래픽 작업을 해왔습니다. 의료 기업의 제품 시각화, 건축 비주얼라이제이션, 대학 리크루팅 영상까지 실제 목적을 가진 영상 작업을 다뤄왔습니다.</p>
+      <p style="color:var(--muted)">Bergen Tech 재학생들이 여름부터 수업을 듣고 있습니다.</p>
+      <p data-rise="s:0.08" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.55;letter-spacing:-.02em">학생들에게 가르치는 것은 이 현장에서 쓰는 방식 그대로입니다. 학원용으로 다시 만든 커리큘럼이 아닙니다.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="09 면담 신청" style="background:#FBF8F0;color:var(--ink);padding:clamp(5rem,12vw,9rem) 0 clamp(3rem,6vw,5rem)">
+  <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)">
+    <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;color:#B8842C;margin-bottom:clamp(1.5rem,3vw,2.5rem)">09</div>
+    <h2 style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:1.0;letter-spacing:-.045em;font-size:clamp(2.4rem,7.4vw,5.8rem);margin-bottom:clamp(2rem,4vw,3rem)" data-shift="-1.6">면담 신청</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:clamp(2rem,5vw,4.5rem);align-items:start">
+      <div>
+        <p data-rise="u" style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:700;font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.45;letter-spacing:-.03em"><strong style="font-weight:800;background:var(--accent);padding:0 .18em">무료 1:1 면담</strong>으로<br>시작합니다.</p>
+        <p style="color:#4A4E58;margin-top:1.5rem;max-width:32rem">학생이 지금 무엇을 하고 있고 무엇을 만들고 싶은지 이야기를 나눈 뒤, 그에 맞는 수업 계획과 일정을 함께 정합니다. 등록을 결정하지 않으셔도 괜찮습니다.</p>
+      </div>
+
+      <form onSubmit="{{ onSubmit }}" style="display:flex;flex-direction:column;gap:1.1rem;background:#FFFFFF;border:1px solid rgba(13,14,18,.14);box-shadow:12px 12px 0 var(--accent);padding:clamp(1.5rem,3vw,2.25rem)">
+        <label style="display:flex;flex-direction:column;gap:.4rem">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.1em;color:#8B8779">성함</span>
+          <input type="text" name="name" placeholder="학부모 성함" style="font-family:inherit;font-size:1rem;padding:.7rem .8rem;border:1px solid rgba(13,14,18,.2);background:#FCFBF8;color:#0D0E12;outline:none" style-focus="border-color:#0D0E12" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:.4rem">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.1em;color:#8B8779">이메일</span>
+          <input type="email" name="email" placeholder="name@example.com" style="font-family:inherit;font-size:1rem;padding:.7rem .8rem;border:1px solid rgba(13,14,18,.2);background:#FCFBF8;color:#0D0E12;outline:none" style-focus="border-color:#0D0E12" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:.4rem">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.1em;color:#8B8779">학생 학년</span>
+          <input type="text" name="grade" placeholder="예: 10학년" style="font-family:inherit;font-size:1rem;padding:.7rem .8rem;border:1px solid rgba(13,14,18,.2);background:#FCFBF8;color:#0D0E12;outline:none" style-focus="border-color:#0D0E12" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:.4rem">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.1em;color:#8B8779">지금 쓰는 도구</span>
+          <input type="text" name="tools" placeholder="예: Procreate, Blender" style="font-family:inherit;font-size:1rem;padding:.7rem .8rem;border:1px solid rgba(13,14,18,.2);background:#FCFBF8;color:#0D0E12;outline:none" style-focus="border-color:#0D0E12" />
+        </label>
+        <label style="display:flex;flex-direction:column;gap:.4rem">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.1em;color:#8B8779">관심 분야</span>
+          <textarea name="interest" rows="3" placeholder="animation, game, 3D modeling, media art …" style="font-family:inherit;font-size:1rem;padding:.7rem .8rem;border:1px solid rgba(13,14,18,.2);background:#FCFBF8;color:#0D0E12;outline:none;resize:vertical" style-focus="border-color:#0D0E12"></textarea>
+        </label>
+        <button type="submit" style="font-family:'Gothic A1',sans-serif;font-weight:800;font-size:1rem;letter-spacing:-.01em;padding:.95rem 1rem;border:none;background:#0D0E12;color:#F2EFE7;cursor:pointer;margin-top:.3rem" style-hover="background:#F5B316;color:#0D0E12">무료 면담 문의하기</button>
+        <p style="font-family:ui-monospace,Menlo,monospace;font-size:.68rem;color:#8B8779;line-height:1.6">{{ formNote }}</p>
+      </form>
+    </div>
+
+    <div style="margin-top:clamp(4rem,8vw,6rem);border-top:1px solid rgba(13,14,18,.16);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;flex-wrap:wrap">
+      <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.95rem">meetdigitalart.com</div>
+      <div style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;letter-spacing:.06em;color:#6B6758">학생 대상 콘텐츠는 <a href="https://instagram.com/meetdigitalart" target="_blank" rel="noopener" style="color:#0D0E12;font-weight:700;background:var(--accent);padding:.15em .4em" style-hover="background:#0D0E12;color:#F5B316">Instagram @meetdigitalart</a></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sent: false };
+
+  componentDidMount() {
+    this.reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.root = document.querySelector('[data-scroll-root]');
+    if (!this.root) return;
+
+    this.root.querySelectorAll('[data-s]').forEach(p => {
+      if (!p.getTotalLength) return;
+      const L = p.getTotalLength();
+      p.style.strokeDasharray = L;
+      p.style.strokeDashoffset = this.reduce ? 0 : L;
+      p._len = L;
+    });
+
+    this.stages = [...this.root.querySelectorAll('[data-charstage]')].map(el => {
+      const st = { el, mini: el.querySelector('[data-mini]'), px: 0, py: 0, hop: 0, hover: 0 };
+      el.addEventListener('pointermove', ev => {
+        const r = el.getBoundingClientRect();
+        st.px = (ev.clientX - r.left) / r.width - 0.5;
+        st.py = (ev.clientY - r.top) / r.height - 0.5;
+        st.hover = 1;
+        this.paintMini(st);
+      });
+      el.addEventListener('pointerleave', () => { st.px = st.py = 0; st.hover = 0; this.paintMini(st); });
+      el.addEventListener('click', () => { st.hop = performance.now(); this.springMini(st); });
+      return st;
+    });
+
+    let queued = false;
+    this._onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => { this.render_(); queued = false; });
+    };
+    addEventListener('scroll', this._onScroll, { passive: true });
+    addEventListener('resize', this._onScroll);
+    this.render_();
+    if (!this.reduce) this.introDraw();
+  }
+
+  componentWillUnmount() {
+    removeEventListener('scroll', this._onScroll);
+    removeEventListener('resize', this._onScroll);
+  }
+
+  clamp(v, a, b) { return Math.min(Math.max((v - a) / (b - a), 0), 1); }
+
+  paintMini(st, hopY = 0, hopSpin = 0) {
+    if (!st.mini) return;
+    const lean = st.px * 16 + hopSpin;
+    const dx = st.px * 12, dy = st.py * 6 + hopY;
+    const sc = 1 + st.hover * 0.06 - hopY * 0.004;
+    st.mini.setAttribute('transform',
+      `translate(${dx.toFixed(1)} ${dy.toFixed(1)}) rotate(${lean.toFixed(1)}) scale(${sc.toFixed(3)})`);
+    st.mini.style.transformBox = 'fill-box';
+    st.mini.style.transformOrigin = 'center bottom';
+  }
+
+  springMini(st) {
+    const t0 = st.hop;
+    const step = now => {
+      if (st.hop !== t0) return;
+      const k = (now - t0) / 780;
+      if (k >= 1) { this.paintMini(st); return; }
+      const decay = Math.exp(-3.4 * k);
+      this.paintMini(st, -34 * Math.sin(Math.PI * Math.min(k * 1.6, 1)) * decay, 16 * Math.sin(k * 22) * decay);
+      requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  progress(el) {
+    const r = el.getBoundingClientRect();
+    return Math.min(Math.max((innerHeight - r.top) / (innerHeight + r.height), 0), 1);
+  }
+
+  introDraw() {
+    const els = [...this.root.querySelectorAll('[data-s]')];
+    let i = 0;
+    const step = () => {
+      if (i >= els.length || scrollY > 40) return;
+      const p = els[i], t0 = performance.now();
+      const anim = now => {
+        const k = Math.min((now - t0) / 620, 1);
+        p.style.strokeDashoffset = p._len * (1 - k);
+        if (k < 1) requestAnimationFrame(anim); else { i++; step(); }
+      };
+      requestAnimationFrame(anim);
+    };
+    setTimeout(step, 280);
+  }
+
+  render_() {
+    const R = this.root;
+    if (!R) return;
+
+    // hero: 4 beats — character close-up → zoom out builds the world → rise above clouds → hand off
+    const hero = R.querySelector('[data-hero]');
+    if (hero) {
+      const span = hero.offsetHeight - innerHeight;
+      const t = this.reduce ? 0.34 : Math.min(Math.max(-hero.getBoundingClientRect().top / Math.max(span, 1), 0), 1);
+      const ease = k => k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+
+      const zoom = ease(this.clamp(t, 0.04, 0.42));            // beat 1→2
+      const rise = ease(this.clamp(t, 0.5, 0.9));              // beat 3
+      const bye  = this.clamp(t, 0.86, 1);                     // beat 4
+
+      const stage = hero.querySelector('[data-hstage]');
+      if (stage) {
+        const sc = 3.1 - 2.1 * zoom;
+        const oy = -16 * (1 - zoom);
+        const ox = 34 * (1 - zoom);   // beat 1 keeps the figure clear of the title column
+        stage.setAttribute('transform', `translate(200 150) scale(${sc.toFixed(3)}) translate(${(-200 + ox).toFixed(1)} ${(-150 + oy).toFixed(1)})`);
+      }
+      hero.querySelectorAll('[data-s]').forEach((p, i) => {
+        if (!p._len) return;
+        const k = ease(this.clamp(zoom, 0.15 + i * 0.09, 0.62 + i * 0.09));
+        p.style.strokeDashoffset = (p._len * (1 - k)).toFixed(1);
+      });
+
+      const scrim = hero.querySelector('[data-scrim]');
+      // flat ink veil covers the whole stage while the close-up shares space with the type,
+      // then lifts as the figure shrinks and the title starts to leave
+      if (scrim) scrim.style.opacity = (0.78 - 0.78 * ease(this.clamp(t, 0.3, 0.62))).toFixed(2);
+
+      const clouds = hero.querySelector('[data-hclouds]');
+      if (clouds) {
+        clouds.setAttribute('opacity', ease(this.clamp(t, 0.34, 0.56)).toFixed(2));
+        clouds.setAttribute('transform', `translate(${(-18 * rise).toFixed(1)} ${(46 * rise).toFixed(1)})`);
+      }
+
+      const ch = hero.querySelector('[data-hchar]');
+      if (ch) {
+        const y = -232 * rise - 120 * bye;
+        const tilt = 8 * Math.sin(rise * Math.PI) - 6 * bye;
+        ch.setAttribute('transform', `translate(${(10 * rise).toFixed(1)} ${y.toFixed(1)}) rotate(${tilt.toFixed(1)} 200 150)`);
+        ch.setAttribute('opacity', (1 - bye).toFixed(2));
+      }
+      hero.querySelectorAll('[data-arm]').forEach((a, i) => {
+        const up = rise * (i ? 1 : -1) * 26;
+        a.setAttribute('transform', `rotate(${up.toFixed(1)} ${i ? 209 : 191} 148)`);
+      });
+
+      // title lines slide in from opposite sides and settle as the world builds
+      const from = [-9, 11, -26];
+      const floor = [1, 0.96, 0.9];
+      hero.querySelectorAll('[data-tl]').forEach((l, i) => {
+        const k = Math.max(ease(this.clamp(t, i * 0.08, 0.26 + i * 0.08)), floor[i]);
+        l.style.opacity = (k * (1 - bye)).toFixed(2);
+        l.style.transform = `translate(${(from[i] * (1 - k) - from[i] * 0.35 * bye).toFixed(2)}vw, ${((1 - k) * 30 - bye * 40).toFixed(1)}px)`;
+      });
+      const sub = hero.querySelector('[data-hsub]');
+      if (sub) sub.style.opacity = (Math.max(ease(this.clamp(t, 0.06, 0.3)), 0.55) * (1 - bye)).toFixed(2);
+      const note = hero.querySelector('[data-charnote]');
+      if (note) note.style.opacity = (1 - this.clamp(t, 0.5, 0.75)).toFixed(2);
+      const cue = hero.querySelector('[data-cue]');
+      if (cue) cue.style.opacity = (1 - this.clamp(t, 0.02, 0.14)).toFixed(2);
+    }
+
+    // text blocks slide into place as each section enters
+    R.querySelectorAll('[data-rise]').forEach(el => {
+      if (this.reduce) { el.style.opacity = 1; el.style.transform = 'none'; return; }
+      const [dir, delay, dist] = (el.getAttribute('data-rise') || 'u').split(':');
+      const lag = parseFloat(delay) || 0;
+      const r = el.getBoundingClientRect();
+      const k = Math.min(Math.max((innerHeight * 0.94 - r.top) / (innerHeight * 0.44) - lag, 0), 1);
+      const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      const d = 1 - e;
+      const gut = Math.min(innerWidth * (parseFloat(dist) || 0.05), 56);
+      let tf;
+      if (dir === 'l') tf = `translate(${(-gut * d).toFixed(1)}px, ${(d * 12).toFixed(1)}px)`;
+      else if (dir === 'r') tf = `translate(${(gut * d).toFixed(1)}px, ${(d * 12).toFixed(1)}px)`;
+      else if (dir === 'd') tf = `translateY(${(-38 * d).toFixed(1)}px)`;
+      else if (dir === 's') tf = `scale(${(1 - 0.07 * d).toFixed(3)}) translateY(${(22 * d).toFixed(1)}px)`;
+      else if (dir === 'rot') tf = `rotate(${(-2.4 * d).toFixed(2)}deg) translate(${(-gut * 0.5 * d).toFixed(1)}px, ${(26 * d).toFixed(1)}px)`;
+      else tf = `translateY(${(38 * d).toFixed(1)}px)`;
+      if (dir === 'rot') el.style.transformOrigin = 'left top';
+      el.style.opacity = (0.05 + 0.95 * e).toFixed(2);
+      el.style.transform = tf;
+      el.style.willChange = e < 1 ? 'transform,opacity' : 'auto';
+    });
+
+    // big headings drift horizontally through their section — layout keeps shifting
+    R.querySelectorAll('[data-shift]').forEach(el => {
+      if (this.reduce) { el.style.transform = 'none'; return; }
+      const amt = parseFloat(el.getAttribute('data-shift')) || 4;
+      const sec = el.closest('section');
+      const p = this.progress(sec || el);
+      const px = amt * (0.5 - p) * 2 * Math.min(innerWidth * 0.01, 10);
+      el.style.transform = `translateX(${px.toFixed(1)}px)`;
+    });
+
+    // 03: one square expands into four media
+    const ex = R.querySelector('[data-scrub="expand"]');
+    if (ex) {
+      const t = this.reduce ? 0.6 : this.clamp(this.progress(ex), 0.12, 0.82);
+      const dest = [[0, 0], [-42, -42], [42, -42], [0, 44]];
+      const rot = [0, -8, 8, 0];
+      ex.querySelectorAll('[data-e]').forEach((g, i) => {
+        const [dx, dy] = dest[i];
+        g.setAttribute('transform',
+          `translate(${(dx * t).toFixed(1)} ${(dy * t).toFixed(1)}) rotate(${(rot[i] * t).toFixed(1)} 100 100) scale(${(1 - 0.18 * t * (i ? 1 : 0)).toFixed(3)})`);
+        g.style.transformOrigin = '100px 100px';
+        if (i) g.setAttribute('opacity', (0.15 + 0.85 * t).toFixed(2));
+      });
+    }
+
+    // 05: single line fans out
+    const fan = R.querySelector('[data-scrub="fan"]');
+    if (fan) {
+      const t = this.reduce ? 0.7 : this.clamp(this.progress(fan), 0.14, 0.86);
+      const ang = [0, -26, 26, -52, 52];
+      fan.querySelectorAll('[data-f]').forEach((g, i) => {
+        g.setAttribute('transform', `rotate(${(ang[i] * t).toFixed(1)} 100 130)`);
+      });
+    }
+
+    // 07: reel frame breathes open
+    const reel = R.querySelector('[data-scrub="reel"]');
+    if (reel) {
+      const t = this.reduce ? 0.7 : this.clamp(this.progress(reel), 0.18, 0.8);
+      const f = reel.querySelector('[data-r="1"]');
+      if (f) f.setAttribute('transform', `translate(160 90) scale(${(0.55 + 1.35 * t).toFixed(3)}) translate(-160 -90)`);
+      const cross = reel.querySelector('[data-r="0"]');
+      if (cross) cross.setAttribute('opacity', (1 - t * 0.8).toFixed(2));
+    }
+  }
+
+  renderVals() {
+    return {
+      formNote: this.state.sent
+        ? '문의가 접수되었습니다. 곧 연락드리겠습니다.'
+        : '* GitHub Pages 정적 사이트이므로 폼 전송은 이메일 또는 Formspree 등의 외부 서비스 연결이 필요합니다.',
+      onSubmit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+
+</script>
+</body>
+</html>
