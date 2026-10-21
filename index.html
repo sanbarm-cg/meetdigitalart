@@ -1,71 +1,372 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D0E12">
+
+  <!-- Google SEO -->
+  <title>Digital Art Classes for Teens in Bergen County NJ | Meet Digital Art</title>
+  <meta name="description" content="Digital art, animation, motion graphics and 3D education for high school students in Bergen County, New Jersey and online. Explore creative projects and portfolios.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://meetdigitalart.com/">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meet Digital Art">
+  <meta property="og:title" content="Meet Digital Art | Creative Education for Teens">
+  <meta property="og:description" content="Digital art, animation and 3D education for high school students in Bergen County, NJ and online.">
+  <meta property="og:url" content="https://meetdigitalart.com/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Meet Digital Art">
+  <meta name="twitter:description" content="Digital Art, Animation & 3D Classes for Teens in Bergen County, NJ.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0D0E12;
+      --text: #F2EFE7;
+      --yellow: #F5B316;
+      --muted: #9CA0AD;
+      --line: #2C3040;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', -apple-system,
+        BlinkMacSystemFont, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 5px;
+    }
+
+    ::selection {
+      background: var(--yellow);
+      color: var(--bg);
+    }
+
+    .page {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap {
+      max-width: 82rem;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: clamp(1.25rem, 4vw, 3rem);
+      padding-right: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: clamp(3rem, 8vh, 6rem);
+      padding-top: clamp(1.4rem, 4vh, 2.4rem);
+      padding-bottom: clamp(3rem, 8vh, 5rem);
+    }
+
+    header .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+
+    .location {
+      font-size: .8rem;
+      letter-spacing: .14em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(3.2rem, 9vw, 8.7rem);
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -0.065em;
+    }
+
+    .hero .highlight {
+      display: block;
+      color: var(--yellow);
+      font-size: clamp(3.7rem, 10vw, 10rem);
+    }
+
+    .hero-summary {
+      max-width: 44rem;
+      margin: 2rem 0 0;
+      font-size: clamp(1rem, 1.55vw, 1.2rem);
+      line-height: 1.65;
+      color: #C6C8D0;
+    }
+
+    .overview {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1.5rem, 3.5vw, 3rem);
+      border-top: 1px solid var(--line);
+      padding-top: clamp(1.5rem, 3vw, 2.25rem);
+    }
+
+    .eyebrow {
+      font-size: .75rem;
+      letter-spacing: .12em;
+      color: var(--muted);
+      margin-bottom: .55rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .value {
+      font-weight: 800;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      line-height: 1.4;
+      letter-spacing: -0.035em;
+    }
+
+    .detail {
+      font-size: .92rem;
+      line-height: 1.6;
+      color: var(--muted);
+      margin: .7rem 0 0;
+    }
+
+    footer {
+      background: var(--yellow);
+      color: var(--bg);
+      padding: clamp(2rem, 5vw, 3.25rem) 0;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    footer h2 {
+      font-weight: 800;
+      font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      margin: 0 0 .5rem;
+    }
+
+    footer p {
+      color: #372908;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 39rem;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 1rem 1.4rem;
+      background: var(--bg);
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1.05rem;
+      transition: background .2s, color .2s;
+    }
+
+    .contact-button:hover {
+      background: #F2EFE7;
+      color: var(--bg);
+    }
+
+    @media (max-width: 700px) {
+      .overview {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.8rem, 12vw, 5.8rem);
+      }
+
+      .hero .highlight {
+        font-size: clamp(3.5rem, 13vw, 7rem);
+      }
+
+      footer .wrap {
+        align-items: stretch;
+      }
+
+      .contact-button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .contact-button {
+        transition: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<x-dc>
-<helmet>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>meetdigitalart — 디지털 아트 수업</title>
-<meta name="description" content="뉴저지 버겐 카운티 고등학생을 위한 디지털 아트 수업. Digital Art · Animation · Motion Graphics · 3D">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
-<style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#0D0E12;color:#F2EFE7;font-family:Pretendard,-apple-system,system-ui,sans-serif;font-size:17px;line-height:1.8;word-break:keep-all;text-wrap:pretty;-webkit-font-smoothing:antialiased}
-  a{color:#F5B316;text-decoration:none}
-  a:hover{color:#FFD264}
-  ::selection{background:#F5B316;color:#0D0E12}
-</style>
-</helmet>
+  <div class="page">
 
-<div style="min-height:100svh;display:flex;flex-direction:column">
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="wrap">
+          <a class="brand" href="/">
+            meetdigitalart
+          </a>
+          <div class="location">
+            Bergen County, NJ · Online
+          </div>
+        </div>
+      </header>
 
-  <main style="flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:clamp(3rem,8vh,6rem);padding:clamp(1.4rem,4vh,2.4rem) 0 clamp(3rem,8vh,5rem)">
-    <div style="max-width:82rem;margin:0 auto;width:100%;padding:0 clamp(1.25rem,4vw,3rem);display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;flex-wrap:wrap">
-      <div style="font-family:'Gothic A1',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.02em">meetdigitalart</div>
-      <div style="font-size:.8rem;letter-spacing:.14em;color:#8E93A0;text-transform:uppercase">Bergen County · Online</div>
-    </div>
+      <!-- Main Hero -->
+      <section class="hero wrap">
+        <h1>
+          One Idea.
+          <span class="highlight">
+            Endless Possibilities.
+          </span>
+        </h1>
 
-    <div style="max-width:82rem;margin:0 auto;width:100%;padding:0 clamp(1.25rem,4vw,3rem);font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;line-height:1.02;letter-spacing:-0.045em">
-      <div style="font-size:clamp(2.1rem,7.2vw,6rem)">하나의 아이디어가</div>
-      <div style="font-size:clamp(3.4rem,15.5vw,13rem);margin-left:-.02em;color:#F5B316">어디까지</div>
-      <div style="font-size:clamp(2.1rem,7.2vw,6rem);text-align:right">갈 수 있는지</div>
-    </div>
+        <p class="hero-summary">
+          Digital art, animation, motion graphics
+          and 3D classes for high school students
+          in Bergen County, New Jersey and online.
+          Turn creative ideas into original projects
+          through hands-on digital production.
+        </p>
+      </section>
 
-    <div style="max-width:82rem;margin:0 auto;width:100%;padding:0 clamp(1.25rem,4vw,3rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:clamp(1.5rem,3.5vw,3rem);border-top:1px solid #2C3040;padding-top:clamp(1.5rem,3vw,2.25rem)">
-      <div>
-        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.75rem;letter-spacing:.12em;color:#8E93A0;margin-bottom:.55rem">누구를 위한 수업인가</div>
-        <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.1rem,1.8vw,1.4rem);line-height:1.35;letter-spacing:-.03em">High School Students<br>Grade 9+</div>
+      <!-- Program Overview -->
+      <section class="overview wrap"
+               aria-label="Class Overview">
+
+        <div>
+          <div class="eyebrow">
+            Who is it for?
+          </div>
+
+          <div class="value">
+            High School Students<br>
+            Grades 9+
+          </div>
+
+          <p class="detail">
+            Students interested in digital creativity,
+            storytelling and visual communication.
+          </p>
+        </div>
+
+        <div>
+          <div class="eyebrow">
+            What will you learn?
+          </div>
+
+          <div class="value">
+            Digital Art · Animation<br>
+            Motion Graphics · 3D
+          </div>
+
+          <p class="detail">
+            Explore real-world creative workflows
+            and build original digital projects.
+          </p>
+        </div>
+
+        <div>
+          <div class="eyebrow">
+            What can you work toward?
+          </div>
+
+          <div class="value">
+            Creative Portfolios<br>
+            Scholastic · TSA Projects
+          </div>
+
+          <p class="detail">
+            Develop work that reflects your interests
+            and goals. Competition and college
+            requirements vary.
+          </p>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer>
+      <div class="wrap">
+
+        <div>
+          <h2>
+            We're building something creative.
+          </h2>
+
+          <p>
+            Our full website is coming soon.
+            For a free introductory consultation,
+            send us a message on Instagram.
+          </p>
+        </div>
+
+        <a
+          href="https://www.instagram.com/meetdigitalart/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-button">
+          Instagram @meetdigitalart ↗
+        </a>
+
       </div>
-      <div>
-        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.75rem;letter-spacing:.12em;color:#8E93A0;margin-bottom:.55rem">무엇을 배우는가</div>
-        <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.1rem,1.8vw,1.4rem);line-height:1.35;letter-spacing:-.03em">Digital Art · Animation<br>Motion Graphics · 3D</div>
-      </div>
-      <div>
-        <div style="font-family:ui-monospace,Menlo,monospace;font-size:.75rem;letter-spacing:.12em;color:#8E93A0;margin-bottom:.55rem">왜 배우는가</div>
-        <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.1rem,1.8vw,1.4rem);line-height:1.35;letter-spacing:-.03em">Portfolio · Scholastic<br>TSA · College Preparation</div>
-      </div>
-    </div>
-  </main>
+    </footer>
 
-  <footer style="background:#F5B316;color:#0D0E12;padding:clamp(2rem,5vw,3.25rem) 0">
-    <div style="max-width:82rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);display:flex;justify-content:space-between;align-items:center;gap:1.5rem 2.5rem;flex-wrap:wrap">
-      <div style="display:flex;flex-direction:column;gap:.35rem">
-        <div style="font-family:'Gothic A1',Pretendard,sans-serif;font-weight:800;font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.035em">사이트를 준비하고 있습니다.</div>
-        <div style="font-size:1rem;line-height:1.6;color:#2E2405">무료 1:1 면담 문의는 Instagram DM으로 받고 있습니다.</div>
-      </div>
-      <a href="https://instagram.com/meetdigitalart" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.6rem;background:#0D0E12;color:#F2EFE7;font-family:'Gothic A1',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:-.01em;padding:1rem 1.4rem;min-height:44px" style-hover="background:#F2EFE7;color:#0D0E12">Instagram @meetdigitalart</a>
-    </div>
-  </footer>
-
-</div>
-
-</x-dc>
+  </div>
 </body>
 </html>
