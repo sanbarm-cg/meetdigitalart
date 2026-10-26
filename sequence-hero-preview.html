@@ -7,21 +7,32 @@
   <meta name="theme-color" content="#0D0E12">
 
   <!-- Google SEO -->
-  <title>Digital Art Classes for Teens in Bergen County NJ | Meet Digital Art</title>
-  <meta name="description" content="Digital art, animation, motion graphics and 3D education for high school students in Bergen County, New Jersey and online. Explore creative projects and portfolios.">
+  <title>Meet Digital Art | Digital Art Classes in Bergen County, NJ</title>
+  <meta name="description" content="Project-based digital art classes, animation and 3D art for teens in Bergen County, NJ, including Tenafly, and online. Learn from a working artist.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://meetdigitalart.com/">
 
   <!-- Social sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Meet Digital Art">
-  <meta property="og:title" content="Meet Digital Art | Creative Education for Teens">
-  <meta property="og:description" content="Digital art, animation and 3D education for high school students in Bergen County, NJ and online.">
+  <meta property="og:site_name" content="meetdigitalart">
+  <meta property="og:title" content="Meet Digital Art | Digital Art Classes in Bergen County, NJ">
+  <meta property="og:description" content="Project-based digital art classes, animation and 3D art for teens in Bergen County, NJ, including Tenafly, and online. Learn from a working artist.">
   <meta property="og:url" content="https://meetdigitalart.com/">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Meet Digital Art">
-  <meta name="twitter:description" content="Digital Art, Animation & 3D Classes for Teens in Bergen County, NJ.">
+  <meta name="twitter:title" content="Meet Digital Art | Digital Art Classes in Bergen County, NJ">
+  <meta name="twitter:description" content="Project-based digital art classes, animation and 3D art for teens in Bergen County, NJ, including Tenafly, and online. Learn from a working artist.">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://meetdigitalart.com/#website",
+  "name": "meetdigitalart",
+  "alternateName": "Meet Digital Art",
+  "url": "https://meetdigitalart.com/"
+}
+  </script>
 
   <!-- Fonts -->
 
@@ -255,7 +266,7 @@
     .hero-copy { position:relative; }
     .overview { margin-top:2rem; margin-bottom:5rem; }
     .chapter { padding-top:clamp(4rem,8vw,7rem); padding-bottom:clamp(4rem,8vw,7rem); border-top:1px solid var(--line); scroll-margin-top:2rem; }
-    .chapter h2 { font-size:clamp(2rem,5vw,4rem); line-height:1.12; letter-spacing:-.015em; margin:0 0 1.5rem; max-width:24ch; }
+    .chapter :is(h1,h2) { font-size:clamp(2rem,5vw,4rem); line-height:1.12; letter-spacing:-.015em; margin:0 0 1.5rem; max-width:24ch; }
     .accent, .chapter > .eyebrow, .chapter h3 { color:var(--yellow); }
     .chapter > .eyebrow { display:flex; align-items:center; gap:1rem; }
     .chapter > .eyebrow::before { content:""; display:block; width:2rem; height:2px; background:var(--yellow); flex:none; }
@@ -284,8 +295,8 @@
     .hero-lead { display:block; font-size:clamp(3.825rem,11.475vw,9.18rem); text-align:left; line-height:.92; letter-spacing:-.045em; font-weight:800; }
     .hero .highlight { margin-top:1.4rem; max-width:19ch; font-size:clamp(2.2rem,6.9vw,5.6rem); line-height:1.02; letter-spacing:-.025em; }
     .hero-summary { margin-top:2.5rem; max-width:39rem; font-size:clamp(1rem,1.5vw,1.15rem); }
-    .chapter h2 { font-size:clamp(2.5rem,6.5vw,5.4rem); font-weight:800; line-height:1; letter-spacing:-.03em; max-width:19ch; margin-bottom:2rem; text-wrap:balance; }
-    .chapter h2 .accent { display:block; }
+    .chapter :is(h1,h2) { font-size:clamp(2.5rem,6.5vw,5.4rem); font-weight:800; line-height:1; letter-spacing:-.03em; max-width:19ch; margin-bottom:2rem; text-wrap:balance; }
+    .chapter :is(h1,h2) .accent { display:block; }
     .chapter > .eyebrow { font-size:.72rem; letter-spacing:.18em; margin-bottom:2.4rem; line-height:1.6; }
     .chapter h3 { font-size:clamp(1.3rem,2.1vw,1.7rem); letter-spacing:-.005em; line-height:1.2; max-width:23ch; }
     .chapter .intro { font-size:clamp(1.05rem,1.65vw,1.25rem); line-height:1.75; max-width:42rem; }
@@ -297,7 +308,7 @@
     @media(max-width:700px) {
       .hero-lead { font-size:clamp(3.06rem,12.75vw,5.44rem); }
       .hero .highlight { font-size:clamp(2rem,9.3vw,4rem); max-width:18ch; margin-top:1.2rem; }
-      .chapter h2 { font-size:clamp(2.4rem,10vw,4rem); }
+      .chapter :is(h1,h2) { font-size:clamp(2.4rem,10vw,4rem); }
       .chapter > .eyebrow { margin-bottom:1.8rem; }
     }
 
@@ -494,7 +505,7 @@
           <div class="sequence-shade" aria-hidden="true"></div>
           <div class="sequence-copy">
             <p class="sequence-kicker">IMAGINE · EXPERIMENT · CREATE</p>
-            <h1 id="sequence-title"><span>Your <br>Imagination</span><strong>A World <br>to Explore</strong></h1>
+            <p class="sequence-headline" id="sequence-title"><span>Your <br>Imagination</span><strong>A World <br>to Explore</strong></p>
             <p class="sequence-description">Digital Art Education for Teens<br>Explore ideas · Learn the tools · Create original work</p>
             <a class="sequence-cta" href="#programs">Find your starting point <span>↗</span></a>
           </div>
@@ -562,7 +573,8 @@
       </section>
 
       <section class="chapter wrap" id="why" aria-labelledby="why-title">
-        <p class="eyebrow">02 · Why digital art / Why here</p><h2 id="why-title">Your ideas <span class="accent">More ways to create</span></h2>
+        <p class="eyebrow">02 · Why digital art / Why here</p><h1 id="why-title">Learn from a <span class="accent">Working Artist.</span></h1>
+        <p class="intro">Meet Digital Art (meetdigitalart) offers project-based digital art, animation, and 3D education in Bergen County, New Jersey, guided by a working professional artist.</p>
         <p class="intro">Digital art brings images, movement and three-dimensional space together. Start with something you want to express. Learn the tools and creative decisions that help you make it.</p>
         <p class="intro">Guided projects connect technical practice with storytelling, experimentation and revision.</p>
         <details lang="ko"><summary>디지털 아트를 배우는 이유</summary><p class="ko">그림, 움직임, 3D 공간을 통해 생각을 표현합니다. 목표에 맞는 프로젝트와 도구를 선택하고, 피드백과 수정을 거쳐 자신만의 작업으로 발전시킵니다.</p></details>
@@ -583,7 +595,7 @@
       </section>
       <section class="chapter wrap" id="student-work" aria-labelledby="work-title">
         <p class="eyebrow">04 · Student work</p><h2 id="work-title">Ideas <span class="accent">made Visible</span></h2>
-        <p class="intro">Different ideas. Different ways to create. Explore selected student projects across images, design, space and motion.</p>
+        <p class="intro">Explore student work in digital art, animation, motion graphics and 3D design. These selected projects show how students develop original ideas through planning, production and revision.</p>
         <div class="work-gallery"><figure class="work-card work-featured"><div class="work-image-link"><img src="assets/student-work/gallery/cloud-portrait.jpg" loading="lazy" alt="Portrait emerging from clouds above red ladders"></div><figcaption><span class="work-category">Digital painting</span><h3>Clouds &amp; ladders</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/gallery/jar-portrait.png" loading="lazy" alt="Figure holding a glass container in front of the face"></div><figcaption><span class="work-category">Digital image-making</span><h3>Portrait &amp; glass</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/gallery/environment-poster.png" loading="lazy" alt="Forest poster with the word STOP"></div><figcaption><span class="work-category">Visual design</span><h3>Environmental poster</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/3d/architecture-render.png" loading="lazy" alt="Digital shelter render with curved roof and planting"></div><figcaption><span class="work-category">Architectural design</span><h3>Green Shelter Design</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/3d/render-artwork.png" loading="lazy" alt="Whale suspended in a room above discarded objects"></div><figcaption><span class="work-category">Rendered artwork</span><h3>A Future Field Trip</h3></figcaption></figure><figure class="work-card work-film"><video controls playsinline preload="none" poster="assets/student-work/animation/missing-piece.jpg" aria-label="One Idea. One Animated Scene."><source src="assets/student-work/animation/class-showcase.mp4" type="video/mp4"><a href="assets/student-work/animation/class-showcase.mp4">Watch One Idea. One Animated Scene.</a></video><figcaption><span class="work-category">Animation</span><h3>One Idea. One Animated Scene.</h3><p class="detail">Three beginner animation projects · Get Back Up / Missing Piece / Addiction</p></figcaption></figure><figure class="work-card work-film"><video controls playsinline preload="none" poster="assets/student-work/gallery/fears-of-ai.jpg" aria-label="Fears of AI"><source src="assets/student-work/gallery/fears-of-ai.mp4" type="video/mp4"><a href="assets/student-work/gallery/fears-of-ai.mp4">Watch Fears of AI</a></video><figcaption><span class="work-category">Motion graphics</span><h3>Fears of AI</h3><p class="detail">A visual exploration of an idea through graphics and movement.</p></figcaption></figure><figure class="work-card tsa-package"><div class="tsa-package-board" role="group" aria-label="TSA promotional design package, final version"><img class="tsa-cover" src="assets/student-work/tsa/final/folder.png" loading="lazy" alt="Final promotional folder cover"><img src="assets/student-work/tsa/final/flyer.png" loading="lazy" alt="Final event flyer"><img src="assets/student-work/tsa/final/social.png" loading="lazy" alt="Final social media graphic"><img class="tsa-card" src="assets/student-work/tsa/final/brochure.png" loading="lazy" alt="Final brochure layout"></div><figcaption><span class="work-category">Promotional design · Package</span><h3>TSA Design Package</h3><p class="tsa-review-status">Final design package</p><p class="detail">Folder cover · Flyer · Social graphic · Brochure</p><p class="detail" lang="ko">하나의 시각적 방향을 여러 매체에 적용한 디자인 패키지입니다. 최종 버전의 디자인 패키지입니다.</p></figcaption></figure></div>
         <details lang="ko"><summary>학생작품 안내</summary><p class="ko">페인팅, 시각디자인, 건축 디자인, 3D 렌더, 애니메이션과 모션 그래픽을 묶은 선정안입니다. 완성 이미지 중심으로 살펴보고, 아래 프로그램 영역에서 제작 과정도 확인할 수 있습니다.</p></details>
       </section>
@@ -609,7 +621,7 @@
         <p class="detail">Competition and college requirements vary. Participation does not guarantee an award or admission.</p>
       </section>
       <section class="chapter wrap" id="programs" aria-labelledby="program-title">
-        <p class="eyebrow">06 · Programs</p><h2 id="program-title">Start with <span class="accent">your goal</span></h2><p class="intro">Choose a direction to discuss in your consultation. Projects and technical practice are shaped around your experience and interests.</p>
+        <p class="eyebrow">06 · Programs</p><h2 id="program-title">Start with <span class="accent">your goal</span></h2><p class="intro">Explore digital art classes, animation classes and 3D art classes for teens in Bergen County, New Jersey, including Tenafly, and online. Projects and technical practice are shaped around your experience and interests.</p>
         <div class="grid goal-sequence" aria-label="Explore, develop a project, build a portfolio">
           <article><svg class="step-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><span class="step-label">01 · Explore</span><h3>I want to explore</h3><p>Try digital image-making, animation or 3D. Discover how you enjoy creating.</p></article>
           <article><svg class="step-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><span class="step-label">02 · Develop</span><h3>I want to develop a project</h3><p>Turn a personal idea into a focused piece through planning, production and revision.</p></article>
