@@ -1,0 +1,31 @@
+/* Black / yellow sequence styling, layered over the preserved concept CSS. */
+.sequence-stage { background:#0D0E12; color:#F2EFE7; }
+.sequence-header .brand-name { color:#F2EFE7; }
+.sequence-header .brand-name>span, .sequence-header nav a[lang=ko] { color:#F5B316; }
+.sequence-art img, .sequence-art canvas { width:100%; height:100%; display:block; object-fit:cover; }
+.sequence-art img[hidden], .sequence-art canvas[hidden] { display:none; }
+.sequence-art canvas { position:absolute; inset:0; }
+.sequence-copy h1 strong { color:#F5B316; }
+.sequence-kicker, .sequence-description { color:#bbb9b3; }
+.sequence-cta { border-color:#F5B316; color:#F2EFE7; }
+.sequence-cta span { color:#F5B316; }
+.sequence-preview-controls { color:#aaa9a5; }
+.sequence-scroll-cue { color:#F2EFE7; }
+.sequence-enabled .sequence-copy>* { opacity:0; transform:translateX(-20px); transition:opacity .9s ease,transform 1s cubic-bezier(.22,1,.36,1); }
+.sequence-copy-ready .sequence-copy>* { opacity:1; transform:none; }
+.sequence-copy-ready .sequence-copy h1 { transition-delay:.12s; }
+.sequence-copy-ready .sequence-description { transition-delay:.35s; }
+.sequence-copy-ready .sequence-cta { transition-delay:.5s; }
+#sequence-status { position:absolute; bottom:5rem; left:5vw; font-size:.7rem; color:#9ca0ad; }
+#sequence-pause[hidden] { display:none; }
+@media(max-width:800px) {
+ .sequence-copy::before { background:linear-gradient(90deg,#0d0e12eb,#0d0e12c0 60%,transparent); }
+}
+@media(prefers-reduced-motion:reduce) { .sequence-copy>* { opacity:1; transform:none; transition:none; } }
+
+@media(prefers-reduced-motion:reduce) { .sequence-enabled .sequence-copy>* { opacity:1; transform:none; transition:none; } }
+/* Scroll-scrubbed version: three viewport heights, no time-based autoplay. */
+.sequence-scroll.sequence-enabled { height:300svh; }
+@media(prefers-reduced-motion:reduce) {
+ .sequence-scroll.sequence-enabled { height:100svh; min-height:700px; }
+}

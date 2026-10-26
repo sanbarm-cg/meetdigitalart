@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D0E12">
+
+  <!-- Google SEO -->
+  <title>Digital Art Classes for Teens in Bergen County NJ | Meet Digital Art</title>
+  <meta name="description" content="Digital art, animation, motion graphics and 3D education for high school students in Bergen County, New Jersey and online. Explore creative projects and portfolios.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://meetdigitalart.com/">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meet Digital Art">
+  <meta property="og:title" content="Meet Digital Art | Creative Education for Teens">
+  <meta property="og:description" content="Digital art, animation and 3D education for high school students in Bergen County, NJ and online.">
+  <meta property="og:url" content="https://meetdigitalart.com/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Meet Digital Art">
+  <meta name="twitter:description" content="Digital Art, Animation & 3D Classes for Teens in Bergen County, NJ.">
+
+  <!-- Fonts -->
+
+  <style>
+    :root {
+      --bg: #0D0E12;
+      --text: #F2EFE7;
+      --yellow: #F5B316;
+      --muted: #9CA0AD;
+      --line: #2C3040;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', -apple-system,
+        BlinkMacSystemFont, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 5px;
+    }
+
+    ::selection {
+      background: var(--yellow);
+      color: var(--bg);
+    }
+
+    .page {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap {
+      max-width: 82rem;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: clamp(1.25rem, 4vw, 3rem);
+      padding-right: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: clamp(3rem, 8vh, 6rem);
+      padding-top: clamp(1.4rem, 4vh, 2.4rem);
+      padding-bottom: clamp(3rem, 8vh, 5rem);
+    }
+
+    header .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+
+    .location {
+      font-size: .8rem;
+      letter-spacing: .14em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(3.2rem, 9vw, 8.7rem);
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -0.065em;
+    }
+
+    .hero .highlight {
+      display: block;
+      color: var(--yellow);
+      font-size: clamp(3.7rem, 10vw, 10rem);
+    }
+
+    .hero-summary {
+      max-width: 44rem;
+      margin: 2rem 0 0;
+      font-size: clamp(1rem, 1.55vw, 1.2rem);
+      line-height: 1.65;
+      color: #C6C8D0;
+    }
+
+    .overview {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1.5rem, 3.5vw, 3rem);
+      border-top: 1px solid var(--line);
+      padding-top: clamp(1.5rem, 3vw, 2.25rem);
+    }
+
+    .eyebrow {
+      font-size: .75rem;
+      letter-spacing: .12em;
+      color: var(--muted);
+      margin-bottom: .55rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .value {
+      font-weight: 800;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      line-height: 1.4;
+      letter-spacing: -0.035em;
+    }
+
+    .detail {
+      font-size: .92rem;
+      line-height: 1.6;
+      color: var(--muted);
+      margin: .7rem 0 0;
+    }
+
+    footer {
+      background: var(--yellow);
+      color: var(--bg);
+      padding: clamp(2rem, 5vw, 3.25rem) 0;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    footer h2 {
+      font-weight: 800;
+      font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      margin: 0 0 .5rem;
+    }
+
+    footer p {
+      color: #372908;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 39rem;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 1rem 1.4rem;
+      background: var(--bg);
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1.05rem;
+      transition: background .2s, color .2s;
+    }
+
+    .contact-button:hover {
+      background: #F2EFE7;
+      color: var(--bg);
+    }
+
+    @media (max-width: 700px) {
+      .overview {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.8rem, 12vw, 5.8rem);
+      }
+
+      .hero .highlight {
+        font-size: clamp(3.5rem, 13vw, 7rem);
+      }
+
+      footer .wrap {
+        align-items: stretch;
+      }
+
+      .contact-button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .contact-button {
+        transition: none;
+      }
+    }
+
+    main { gap: 0; }
+    header { padding-bottom: 4rem; }
+    nav { display:flex; gap:1.3rem; flex-wrap:wrap; font-size:.9rem; }
+    .hero { position:relative; isolation:isolate; padding-top:6rem; padding-bottom:5rem; }
+    .hero-media { position:absolute; inset:0; z-index:-1; overflow:hidden; }
+    .hero-media video { width:100%; height:100%; object-fit:cover; opacity:.22; }
+    .hero-copy { position:relative; }
+    .overview { margin-top:2rem; margin-bottom:5rem; }
+    .chapter { padding-top:clamp(4rem,8vw,7rem); padding-bottom:clamp(4rem,8vw,7rem); border-top:1px solid var(--line); scroll-margin-top:2rem; }
+    .chapter h2 { font-size:clamp(2rem,5vw,4rem); line-height:1.12; letter-spacing:-.015em; margin:0 0 1.5rem; max-width:24ch; }
+    .accent, .chapter > .eyebrow, .chapter h3 { color:var(--yellow); }
+    .chapter > .eyebrow { display:flex; align-items:center; gap:1rem; }
+    .chapter > .eyebrow::before { content:""; display:block; width:2rem; height:2px; background:var(--yellow); flex:none; }
+    .chapter .grid > article, .chapter .grid > li { border-top:2px solid var(--yellow); padding-top:1.5rem; }
+    .chapter li::marker { color:var(--yellow); font-weight:700; }
+    .chapter h3 { font-size:1.35rem; line-height:1.35; margin:0 0 .8rem; }
+    .intro { max-width:45rem; color:#C6C8D0; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; margin-top:2.5rem; }
+    .grid > * { min-width:0; }
+    .grid p { color:#C6C8D0; }
+    .placeholder { aspect-ratio:4/3; border:1px dashed var(--muted); display:grid; place-items:center; padding:2rem; color:var(--muted); text-align:center; }
+    figure { margin:0; } figcaption { font-size:.9rem; color:var(--muted); margin-top:1rem; }
+    .ko { font-size:.95rem; color:#C6C8D0; word-break:keep-all; max-width:48rem; }
+    details { margin-top:1.5rem; } summary { cursor:pointer; padding:.5rem 0; }
+    .text-link { display:inline-block; border-bottom:1px solid var(--yellow); margin-top:1rem; min-height:44px; }
+    .skip { position:absolute; left:1rem; top:-10rem; background:var(--bg); z-index:10; padding:1rem; }
+    .skip:focus { top:1rem; }
+    :focus-visible { outline:3px solid var(--yellow); outline-offset:5px; }
+    footer :focus-visible { outline-color:var(--bg); }
+    @media(max-width:700px) { .grid { grid-template-columns:1fr; } .hero { padding-top:3rem; } }
+    @media(prefers-reduced-motion:reduce) { .hero-media { display:none; } }
+
+    /* Editorial type hierarchy: oversized opening, compact supporting statement. */
+    .hero { padding-top:clamp(2rem,5vw,5rem); }
+    .hero h1 { font-size:inherit; }
+    .hero-lead { display:block; font-size:clamp(3.825rem,11.475vw,9.18rem); text-align:left; line-height:.92; letter-spacing:-.045em; font-weight:800; }
+    .hero .highlight { margin-top:1.4rem; max-width:19ch; font-size:clamp(2.2rem,6.9vw,5.6rem); line-height:1.02; letter-spacing:-.025em; }
+    .hero-summary { margin-top:2.5rem; max-width:39rem; font-size:clamp(1rem,1.5vw,1.15rem); }
+    .chapter h2 { font-size:clamp(2.5rem,6.5vw,5.4rem); font-weight:800; line-height:1; letter-spacing:-.03em; max-width:19ch; margin-bottom:2rem; text-wrap:balance; }
+    .chapter h2 .accent { display:block; }
+    .chapter > .eyebrow { font-size:.72rem; letter-spacing:.18em; margin-bottom:2.4rem; line-height:1.6; }
+    .chapter h3 { font-size:clamp(1.3rem,2.1vw,1.7rem); letter-spacing:-.005em; line-height:1.2; max-width:23ch; }
+    .chapter .intro { font-size:clamp(1.05rem,1.65vw,1.25rem); line-height:1.75; max-width:42rem; }
+    .chapter .grid { margin-top:3.5rem; }
+    .chapter .grid p { font-size:1rem; line-height:1.75; max-width:34ch; }
+    .overview .value { font-size:clamp(1.25rem,2.2vw,1.65rem); line-height:1.25; }
+    footer h2 { font-size:clamp(2rem,4.8vw,3.8rem); max-width:18ch; line-height:1.05; letter-spacing:-.025em; }
+    @media(min-width:1000px) { #student-work h2, #beyond h2 { margin-left:16%; } #student-work > .intro, #beyond > .intro { margin-left:16%; } }
+    @media(max-width:700px) {
+      .hero-lead { font-size:clamp(3.06rem,12.75vw,5.44rem); }
+      .hero .highlight { font-size:clamp(2rem,9.3vw,4rem); max-width:18ch; margin-top:1.2rem; }
+      .chapter h2 { font-size:clamp(2.4rem,10vw,4rem); }
+      .chapter > .eyebrow { margin-bottom:1.8rem; }
+    }
+
+    header .wrap { align-items:center; }
+    .brand { display:inline-flex; align-items:center; gap:.8rem; flex-shrink:0; }
+    .brand-mark { display:block; width:64px; height:64px; border-radius:50%; }
+    .brand-lockup { display:flex; flex-direction:column; gap:.3rem; }
+    .brand-name { font-size:clamp(1.25rem,2vw,1.7rem); font-weight:800; line-height:1; letter-spacing:-.065em; color:#F2EFE7; }
+    .brand-name > span { color:#FFCC00; }
+    .brand-tagline { font-size:.56rem; font-weight:500; line-height:1.5; letter-spacing:.18em; text-transform:uppercase; }
+    .youtube-feature { margin-top:3.5rem; border-top:1px solid var(--line); padding-top:2.5rem; }
+    .youtube-banner { display:block; width:100%; height:auto; margin:1.5rem 0; }
+    .youtube-feature .brand-name { display:block; font-size:clamp(1.7rem,4vw,3rem); }
+    .youtube-status { color:var(--muted); font-size:.9rem; }
+    @media(max-width:700px) { .brand-mark { width:52px; height:52px; } .brand-tagline { font-size:.5rem; } header nav { gap:1rem; } }
+    .youtube-feature { display:flex; align-items:center; gap:clamp(1.25rem,3vw,2.5rem); }
+    .youtube-logo { display:block; width:clamp(80px,12vw,112px); height:auto; flex-shrink:0; border-radius:50%; }
+    .youtube-feature .eyebrow { margin:0 0 .65rem; }
+    .youtube-feature h3 { margin-bottom:.6rem; }
+    .youtube-feature .youtube-status { margin:.5rem 0; }
+    .youtube-feature .text-link { margin-top:.3rem; }
+    @media(max-width:420px) { .youtube-feature .brand-name { font-size:1.4rem; } .youtube-feature .text-link { font-size:.85rem; } }
+    .overview > div { border-top:2px solid var(--yellow); padding-top:1.4rem; }
+    .overview .eyebrow { color:var(--yellow); }
+    details[lang="ko"] > summary,
+    nav a[lang="ko"] { color:var(--yellow); }
+    /* Small interactions support the existing typography and spacing. */
+    .text-link { position:relative; transition:color .2s ease; }
+    .text-link::after { content:""; position:absolute; bottom:-1px; left:0; width:100%; height:2px; background:var(--yellow); transform:scaleX(0); transform-origin:left; transition:transform .25s ease; }
+    .text-link:hover, nav a:hover { color:var(--yellow); }
+    .text-link:hover::after, .text-link:focus-visible::after { transform:scaleX(1); }
+    nav a { transition:color .2s ease; }
+    .contact-button { transition:background .2s ease,color .2s ease,transform .2s ease; }
+    .contact-button:hover { transform:translateY(-3px); }
+    summary::marker { color:var(--yellow); }
+    details[open] > summary { margin-bottom:.5rem; }
+    @media(prefers-reduced-motion:reduce) {
+      *, *::before, *::after { animation:none !important; transition:none !important; }
+      .contact-button:hover { transform:none; }
+    }
+    .course-paths { margin-top:4rem; padding-top:3rem; border-top:1px solid var(--line); }
+    .course-paths > .eyebrow { color:var(--yellow); }
+    .chapter .course-heading { font-size:clamp(1.7rem,3vw,2.4rem); max-width:none; }
+    .course-paths h4 { margin:0 0 1rem; color:var(--yellow); font-size:clamp(1.3rem,2vw,1.6rem); line-height:1.25; letter-spacing:0em; }
+    .course-list { padding-left:1.2rem; color:var(--text); font-size:.95rem; line-height:1.7; }
+    .course-list li { margin-bottom:.6rem; }
+    .process-ko { padding-left:1.4rem; }
+    .process-ko li { margin-bottom:1rem; }
+    .process-ko strong { color:var(--yellow); }
+    .goal-sequence > article { position:relative; }
+    .step-label { display:block; margin-bottom:1.2rem; font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--yellow); }
+    .goal-sequence > article:not(:last-child)::after { content:"→"; position:absolute; top:-1.1rem; right:-1.6rem; color:var(--yellow); background:var(--bg); padding:0 .25rem; font-size:1.2rem; }
+    @media(max-width:700px) { .goal-sequence > article:not(:last-child)::after { content:"↓"; top:auto; bottom:-1.9rem; right:1rem; } }
+    .course-panels { margin-top:3.5rem; }
+    .course-panel { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:clamp(2rem,6vw,5rem); padding:clamp(3rem,7vw,6rem) 0; border-top:2px solid var(--yellow); }
+    .course-story, .course-pipeline { min-width:0; }
+    .course-story > .eyebrow, .course-pipeline > .eyebrow { color:var(--yellow); }
+    .course-panel h4 { font-size:clamp(2rem,4vw,3.5rem); max-width:18ch; letter-spacing:-.02em; }
+    .project-examples { color:var(--muted); font-size:.95rem; max-width:45ch; }
+    .course-media { margin-top:2rem; }
+    .course-media .placeholder { aspect-ratio:16/9; background:#13151b; }
+    .course-media small { font-size:.8rem; }
+    .course-pipeline { padding-top:.3rem; }
+    .course-pipeline ol { list-style:none; counter-reset:pipeline; margin:2rem 0 0; padding:0; }
+    .course-pipeline li { counter-increment:pipeline; position:relative; padding:0 0 2.2rem 3rem; border-left:1px solid var(--line); margin-left:.7rem; }
+    .course-pipeline li:last-child { border-left-color:transparent; padding-bottom:0; }
+    .course-pipeline li::before { content:counter(pipeline,decimal-leading-zero); position:absolute; left:-.9rem; top:0; background:var(--bg); color:var(--yellow); font-size:.8rem; padding:.2rem 0; font-weight:700; }
+    .course-pipeline h5 { margin:0 0 .5rem; color:var(--text); font-size:1.1rem; line-height:1.4; }
+    .course-pipeline li p { margin:0; color:var(--muted); font-size:.95rem; line-height:1.65; }
+    @media(max-width:700px) { .course-panel { grid-template-columns:1fr; } .course-pipeline { margin-top:1rem; } }
+    .chapter .goal-sequence > article { border-top:0; padding-top:2rem; }
+    .step-connector { position:absolute; top:-10px; left:0; width:calc(100% + 1.3rem); height:20px; color:var(--yellow); overflow:visible; }
+    .goal-sequence > article:last-child .step-connector { width:100%; }
+    .goal-sequence > article:not(:last-child)::after { content:none; }
+    @media(max-width:700px) {
+      .goal-sequence { gap:3.5rem; }
+      .step-connector { width:100%; }
+    }
+    .chapter .process-sequence > li { position:relative; border-top:0; padding-top:2rem; }
+    .process-connector { position:absolute; top:-10px; left:0; width:calc(100% + 1.3rem); height:20px; color:var(--yellow); overflow:visible; }
+    .process-sequence > li:last-child .process-connector { width:100%; }
+    @media(max-width:700px) {
+      .process-sequence { gap:3.5rem; }
+      .process-connector { width:100%; }
+    }
+    .animation-examples { margin-top:2.5rem; }
+    .animation-examples h5 { margin:0 0 1rem; font-size:clamp(1.5rem,2.5vw,2rem); line-height:1.2; letter-spacing:-.04em; }
+    .student-film video { display:block; width:100%; aspect-ratio:16/9; background:#000; object-fit:contain; }
+    .student-film figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.3rem 1rem; }
+    .student-film figcaption strong { color:var(--yellow); font-weight:600; }
+    .process-gallery { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-top:2rem; }
+    .process-gallery img { display:block; width:100%; aspect-ratio:4/3; object-fit:contain; background:#17191f; }
+    .storyboard-crop { aspect-ratio:4/3; overflow:hidden; background:#fff; }
+    .storyboard-crop img { height:100%; object-fit:cover; object-position:center 58%; }
+    @media(max-width:480px) { .process-gallery { grid-template-columns:1fr; } }
+    .three-d-examples { margin-top:2.5rem; }
+    .three-d-examples > section + section { border-top:1px solid var(--line); margin-top:3rem; padding-top:3rem; }
+    .three-d-examples .eyebrow { color:var(--yellow); }
+    .three-d-examples h5 { font-size:clamp(1.5rem,2.5vw,2rem); line-height:1.2; letter-spacing:-.04em; margin:0 0 1rem; }
+    .three-d-feature { margin-top:1.5rem; }
+    .three-d-feature img { display:block; width:100%; height:auto; background:#14161b; }
+    .three-d-process { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-top:1.5rem; }
+    .three-d-process img { display:block; width:100%; height:210px; object-fit:contain; background:#14161b; }
+    .render-breakdown > summary { color:var(--yellow); }
+    @media(max-width:480px) { .three-d-process { grid-template-columns:1fr; } .three-d-process img { height:auto; } }
+    .gallery-review { color:var(--muted); font-size:.85rem; max-width:48rem; }
+    .work-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3rem 2rem; margin-top:3rem; }
+    .work-card { min-width:0; }
+    .work-image-link { position:relative; display:block; background:#15171d; overflow:hidden; }
+    .work-image-link img { display:block; width:100%; height:420px; object-fit:contain; }
+    .work-featured { grid-column:1/-1; }
+    .work-featured .work-image-link img { height:clamp(350px,65vw,720px); }
+    .work-view { position:absolute; right:.8rem; bottom:.8rem; background:var(--bg); color:var(--text); padding:.4rem .7rem; font-size:.75rem; }
+    .work-category { display:block; color:var(--yellow); text-transform:uppercase; font-size:.7rem; letter-spacing:.13em; margin-bottom:.6rem; }
+    .chapter .work-card h3 { color:var(--text); margin:0; font-size:clamp(1.25rem,2.2vw,1.8rem); max-width:none; }
+    .work-film video { display:block; width:100%; aspect-ratio:16/9; background:#000; }
+    @media(max-width:700px) { .work-gallery { grid-template-columns:1fr; gap:2.5rem; } .work-image-link img { height:auto; max-height:560px; } .work-featured .work-image-link img { height:auto; } }
+    .work-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); gap:4.5rem 2rem; align-items:start; }
+    .work-featured { grid-column:auto; }
+    .work-image-link img, .work-featured .work-image-link img { height:260px; object-fit:contain; }
+    .chapter .work-card h3 { font-size:1.15rem; }
+    .work-card figcaption { margin-top:1.3rem; }
+    .work-card .work-category { margin-bottom:.85rem; line-height:1.8; }
+    .chapter .work-card h3 { line-height:1.5; }
+    .work-card .detail { margin-top:1rem; line-height:1.85; }
+    @media(max-width:900px) { .work-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:540px) { .work-gallery { grid-template-columns:1fr; row-gap:3.5rem; } .work-image-link img, .work-featured .work-image-link img { height:260px; } }
+    .tsa-package { grid-column:span 2; }
+    .tsa-package-board { min-height:260px; display:grid; grid-template-columns:1fr 1fr 1fr 1.15fr; align-items:center; gap:clamp(.6rem,1.5vw,1.25rem); padding:1.5rem; background:#191d26; border:1px solid var(--line); }
+    .tsa-package-board img { display:block; width:100%; height:220px; object-fit:contain; filter:drop-shadow(0 8px 8px #0005); }
+    .tsa-review-status { display:inline-block; margin:.8rem 0 0; border:1px solid var(--yellow); color:var(--yellow); padding:.2rem .6rem; font-size:.75rem; }
+    @media(max-width:540px) { .tsa-package { grid-column:auto; } .tsa-package-board { grid-template-columns:1fr 1fr; } .tsa-package-board img { height:180px; } }
+    .brand-orbit { position:absolute; right:3%; top:1rem; width:clamp(180px,25vw,340px); aspect-ratio:1; color:var(--yellow); opacity:.22; perspective:700px; }
+    .brand-orbit span { position:absolute; }
+    .idea-seed { width:12px; height:12px; background:currentColor; border-radius:50%; left:48%; top:48%; }
+    .idea-ring { inset:14%; border:1px solid currentColor; border-radius:50%; }
+    .idea-plane { inset:23%; border:1px solid currentColor; transform:rotate(35deg); }
+    .plane-two { transform:rotateX(55deg) rotateZ(-25deg); }
+    .motion-playing .idea-ring { animation:idea-ring 4.5s ease both; }
+    .motion-playing .plane-one { animation:idea-plane 4.5s ease both; }
+    .motion-playing .plane-two { animation:idea-depth 4.5s ease both; }
+    @keyframes idea-ring { 0%,15% { transform:scale(.05); opacity:0; } 40%,100% { transform:scale(1); opacity:1; } }
+    @keyframes idea-plane { 0%,35% { transform:scale(.2) rotate(0); opacity:0; } 70%,100% { transform:scale(1) rotate(35deg); opacity:1; } }
+    @keyframes idea-depth { 0%,55% { transform:rotateX(0) rotateZ(35deg); opacity:0; } 100% { transform:rotateX(55deg) rotateZ(-25deg); opacity:1; } }
+    .process-motion { color:var(--yellow); margin:2rem 0 2.5rem; }
+    .process-motion svg { display:block; width:100%; height:auto; max-height:140px; }
+    .motion-playing .process-trace { animation:process-line 3s ease both; }
+    .motion-playing .process-node { animation:process-node .7s ease both; transform-box:fill-box; transform-origin:center; }
+    .motion-playing .node-two { animation-delay:.8s; } .motion-playing .node-three { animation-delay:1.7s; }
+    @keyframes process-line { from { stroke-dasharray:1; stroke-dashoffset:1; } to { stroke-dasharray:1; stroke-dashoffset:0; } }
+    @keyframes process-node { from { opacity:0; transform:scale(.5); } to { opacity:1; transform:scale(1); } }
+    @media(max-width:700px) { .brand-orbit { top:0; right:0; opacity:.12; } }
+    @media(prefers-reduced-motion:reduce) { [data-brand-motion] * { animation:none !important; } }
+
+    /* Local Hero film preview: retain the full frame and existing HTML copy. */
+    .hero-film { position:relative; background:#000; margin-bottom:2.5rem; }
+    .hero-film video { display:block; width:100%; aspect-ratio:854/480; object-fit:contain; background:#000; }
+    .hero-film-controls { position:absolute; bottom:1rem; right:1rem; display:flex; flex-wrap:wrap; gap:.6rem; }
+    .hero-film-controls[hidden], #hero-replay[hidden], .hero-film[hidden] { display:none; }
+    .hero-film-controls button, #hero-replay { font:inherit; font-size:.8rem; color:var(--text); border:1px solid #686868; border-radius:0; padding:.65rem .9rem; background:#111e; cursor:pointer; }
+    .hero-film-controls button:hover, #hero-replay:hover { color:var(--yellow); border-color:var(--yellow); }
+    .hero-film-controls button:focus-visible, #hero-replay:focus-visible { outline:3px solid var(--yellow); outline-offset:4px; }
+    #hero-replay { margin-bottom:1.5rem; }
+    /* Standalone full-screen intro before the site reveal. */
+    html.intro-pending, html.intro-active { overflow:hidden; background:#000; }
+    .intro-pending .page, .intro-active .page { visibility:hidden; }
+    .intro-pending body > .skip, .intro-active body > .skip { visibility:hidden; }
+    .hero-film.intro-overlay { position:fixed; inset:0; z-index:1000; margin:0; display:flex; align-items:center; justify-content:center; background:#000; }
+    .hero-film.intro-overlay[hidden] { display:none; }
+    .hero-film.intro-overlay video { width:100%; height:100%; max-height:none; object-fit:contain; }
+    .intro-active.intro-revealing .page { visibility:visible; }
+    .intro-revealing .hero-film-controls, .intro-revealing .intro-scroll-hint { visibility:hidden; }
+    .intro-scroll-hint { position:absolute; bottom:1.3rem; left:1.5rem; margin:0; color:#aaa; font-size:.75rem; }
+    @media(max-width:700px) { .hero-film-controls { bottom:1rem; right:1rem; left:1rem; justify-content:flex-end; } .intro-scroll-hint { bottom:5.5rem; left:1rem; } }
+
+  </style>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="sequence-preview.css">
+  <link rel="stylesheet" href="sequence-black.css">
+</head>
+
+<body class="sequence-preview">
+  <a class="skip" href="#hero">Skip to content</a>
+  <div class="page">
+
+    <main>
+      <section class="sequence-scroll" id="hero" aria-labelledby="sequence-title">
+        <div class="sequence-stage">
+          <header class="sequence-header">
+            <a class="brand-lockup" href="sequence-hero-preview.html" aria-label="Meet Digital Art home"><span class="brand-name">meetdigital<span>art.</span></span><span class="brand-tagline">Creative education for teens</span></a>
+            <nav aria-label="Main navigation"><a href="#programs">Programs</a><a href="#student-work">Student work</a><a href="#consultation">Consultation</a><a href="#korean" lang="ko">한국어 안내</a></nav>
+          </header>
+          <div class="sequence-art" aria-hidden="true"><img src="assets/hero-sequence/robot-v1-1080p/poster.jpg" alt="" fetchpriority="high" width="1672" height="941"></div>
+          <div class="sequence-shade" aria-hidden="true"></div>
+          <div class="sequence-copy">
+            <p class="sequence-kicker">IMAGINE · EXPERIMENT · CREATE</p>
+            <h1 id="sequence-title"><span>Your <br>Imagination</span><strong>A World <br>to Explore</strong></h1>
+            <p class="sequence-description">Digital Art Education for Teens<br>Explore ideas · Learn the tools · Create original work</p>
+            <a class="sequence-cta" href="#programs">Find your starting point <span>↗</span></a>
+          </div>
+          <div class="sequence-bridge" aria-hidden="true"><p>FROM EXPLORATION TO CREATION</p><h2>Turn creative ideas<br>into original projects</h2></div>
+          <a class="sequence-scroll-cue" href="#site-content"><span>SCROLL TO EXPLORE</span><span>↓</span></a>
+          <p id="sequence-status" role="status" aria-live="polite"></p>
+          <div class="sequence-preview-controls"><span>LINES → CHARACTER</span><button type="button" id="sequence-pause" hidden>Pause / 일시정지</button><button type="button" id="sequence-replay" hidden>Replay / 다시 보기 ↺</button><a href="#site-content">Skip / 건너뛰기 →</a></div>
+        </div>
+      </section>
+
+      <div class="wrap sequence-korean" id="korean" lang="ko"><details><summary>한국어 안내</summary><p>9–12학년을 위한 디지털 아트 온라인 수업을 제공합니다. 도구를 배우는 데서 출발해 자신의 아이디어를 작품으로 발전시키는 과정입니다.</p></details></div>
+      <!-- Program Overview -->
+      <section id="site-content" class="overview wrap"
+               aria-label="Class Overview">
+
+        <div>
+          <div class="eyebrow">
+            Who is it for?
+          </div>
+
+          <div class="value">
+            High School Students<br>
+            Grades <span class="accent">9+</span>
+          </div>
+
+          <p class="detail">
+            Students interested in digital creativity,
+            storytelling and visual communication.
+          </p>
+        </div>
+
+        <div>
+          <div class="eyebrow">
+            What will you learn?
+          </div>
+
+          <div class="value">
+            <span class="accent">Digital Art</span> · Animation<br>
+            Motion Graphics · <span class="accent">3D</span>
+          </div>
+
+          <p class="detail">
+            Explore real-world creative workflows
+            and build original digital projects.
+          </p>
+        </div>
+
+        <div>
+          <div class="eyebrow">
+            What can you work toward?
+          </div>
+
+          <div class="value">
+            Creative <span class="accent">Portfolios</span><br>
+            Scholastic · <span class="accent">TSA</span> Projects
+          </div>
+
+          <p class="detail">
+            Develop work that reflects your interests
+            and goals. Competition and college
+            requirements vary.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="chapter wrap" id="why" aria-labelledby="why-title">
+        <p class="eyebrow">02 · Why digital art / Why here</p><h2 id="why-title">Your ideas <span class="accent">More ways to create</span></h2>
+        <p class="intro">Digital art brings images, movement and three-dimensional space together. Start with something you want to express. Learn the tools and creative decisions that help you make it.</p>
+        <p class="intro">Guided projects connect technical practice with storytelling, experimentation and revision.</p>
+        <details lang="ko"><summary>디지털 아트를 배우는 이유</summary><p class="ko">그림, 움직임, 3D 공간을 통해 생각을 표현합니다. 목표에 맞는 프로젝트와 도구를 선택하고, 피드백과 수정을 거쳐 자신만의 작업으로 발전시킵니다.</p></details>
+      </section>
+      <section class="chapter wrap" id="creative-process" aria-labelledby="process-title">
+        <p class="eyebrow">03 · Creative process</p><h2 id="process-title">An idea becomes <span class="accent">A project</span></h2>
+        <div class="process-motion" data-brand-motion aria-hidden="true">
+          <svg viewBox="0 0 1000 140" fill="none"><path class="process-trace" pathLength="1" d="M50 70H950" stroke="currentColor" stroke-width="1"/><circle class="process-node node-one" cx="70" cy="70" r="9" fill="currentColor"/><g class="process-node node-two"><rect x="477" y="47" width="46" height="46" transform="rotate(45 500 70)" stroke="currentColor" stroke-width="2"/></g><g class="process-node node-three" stroke="currentColor" stroke-width="2"><path d="M900 36L932 54V90L900 108L868 90V54Z M868 54L900 72L932 54 M900 72V108"/></g></svg>
+        </div>
+        <ol class="grid process-sequence"><li><svg class="process-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><h3>Explore &amp; plan</h3><p>Find a question, collect references and sketch a direction.</p></li><li><svg class="process-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><h3>Make &amp; experiment</h3><p>Learn the tools your idea needs. Test images, motion or form.</p></li><li><svg class="process-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><h3>Refine &amp; share</h3><p>Use feedback, revise your choices and explain your process.</p></li></ol>
+        <details lang="ko"><summary>아이디어가 작품이 되는 과정</summary>
+          <ol class="process-ko ko">
+            <li><strong>탐색과 기획</strong> — 관심 있는 주제를 찾고, 참고 자료를 조사하며 아이디어와 제작 방향을 구체화합니다.</li>
+            <li><strong>제작과 실험</strong> — 아이디어에 필요한 도구를 익히고, 이미지·움직임·입체 형태로 표현하며 여러 방법을 시도합니다.</li>
+            <li><strong>수정과 공유</strong> — 피드백을 바탕으로 작품을 다듬고, 자신의 의도와 제작 과정을 설명합니다.</li>
+          </ol>
+        </details>
+      </section>
+      <section class="chapter wrap" id="student-work" aria-labelledby="work-title">
+        <p class="eyebrow">04 · Student work</p><h2 id="work-title">Ideas <span class="accent">made Visible</span></h2>
+        <p class="intro">Different ideas. Different ways to create. Explore selected student projects across images, design, space and motion.</p>
+        <p class="gallery-review" lang="ko">로컬 리뷰용 선정안 · 이미지 제목 일부는 설명용 임시 표기입니다.</p>
+        <div class="work-gallery"><figure class="work-card work-featured"><div class="work-image-link"><img src="assets/student-work/gallery/cloud-portrait.jpg" loading="lazy" alt="Portrait emerging from clouds above red ladders"></div><figcaption><span class="work-category">Digital painting</span><h3>Clouds &amp; ladders</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/gallery/jar-portrait.png" loading="lazy" alt="Figure holding a glass container in front of the face"></div><figcaption><span class="work-category">Digital image-making</span><h3>Portrait &amp; glass</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/gallery/environment-poster.png" loading="lazy" alt="Forest poster with the word STOP"></div><figcaption><span class="work-category">Visual design</span><h3>Environmental poster</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/3d/architecture-render.png" loading="lazy" alt="Digital shelter render with curved roof and planting"></div><figcaption><span class="work-category">Architectural design</span><h3>Green Shelter Design</h3></figcaption></figure><figure class="work-card"><div class="work-image-link"><img src="assets/student-work/3d/render-artwork.png" loading="lazy" alt="Whale suspended in a room above discarded objects"></div><figcaption><span class="work-category">Rendered artwork</span><h3>A Future Field Trip</h3></figcaption></figure><figure class="work-card work-film"><video controls playsinline preload="none" poster="assets/student-work/animation/missing-piece.jpg" aria-label="One Idea. One Animated Scene."><source src="assets/student-work/animation/class-showcase.mp4" type="video/mp4"><a href="assets/student-work/animation/class-showcase.mp4">Watch One Idea. One Animated Scene.</a></video><figcaption><span class="work-category">Animation</span><h3>One Idea. One Animated Scene.</h3><p class="detail">Three beginner animation projects · Get Back Up / Missing Piece / Addiction</p></figcaption></figure><figure class="work-card work-film"><video controls playsinline preload="none" poster="assets/student-work/gallery/fears-of-ai.jpg" aria-label="Fears of AI"><source src="assets/student-work/gallery/fears-of-ai.mp4" type="video/mp4"><a href="assets/student-work/gallery/fears-of-ai.mp4">Watch Fears of AI</a></video><figcaption><span class="work-category">Motion graphics</span><h3>Fears of AI</h3><p class="detail">A visual exploration of an idea through graphics and movement.</p></figcaption></figure><figure class="work-card tsa-package"><div class="tsa-package-board" role="group" aria-label="TSA promotional design package, final version"><img class="tsa-cover" src="assets/student-work/tsa/final/folder.png" loading="lazy" alt="Final promotional folder cover"><img src="assets/student-work/tsa/final/flyer.png" loading="lazy" alt="Final event flyer"><img src="assets/student-work/tsa/final/social.png" loading="lazy" alt="Final social media graphic"><img class="tsa-card" src="assets/student-work/tsa/final/brochure.png" loading="lazy" alt="Final brochure layout"></div><figcaption><span class="work-category">Promotional design · Package</span><h3>TSA Design Package</h3><p class="tsa-review-status">Final design package</p><p class="detail">Folder cover · Flyer · Social graphic · Brochure</p><p class="detail" lang="ko">하나의 시각적 방향을 여러 매체에 적용한 디자인 패키지입니다. 최종 버전의 디자인 패키지입니다.</p></figcaption></figure></div>
+        <details lang="ko"><summary>학생작품 안내</summary><p class="ko">페인팅, 시각디자인, 건축 디자인, 3D 렌더, 애니메이션과 모션 그래픽을 묶은 선정안입니다. 완성 이미지 중심으로 살펴보고, 아래 프로그램 영역에서 제작 과정도 확인할 수 있습니다.</p></details>
+      </section>
+      <section class="chapter wrap" id="achievements" aria-labelledby="achievement-title">
+        <p class="eyebrow">05 · Achievements</p><h2 id="achievement-title">Creative work <span class="accent">Recognized</span></h2>
+        <div class="grid achievement-grid">
+          <article><p class="eyebrow">Scholastic Art &amp; Writing Awards</p><h3>Multiple regional awards</h3><p>Student work recognized at the regional level.</p><p class="ko" lang="ko">스콜라스틱 지역 대회 다수 입상</p></article>
+          <article><p class="eyebrow">2026 · TSA Nationals</p><h3>National Top 10</h3><p>Promotional Design</p><p class="ko" lang="ko">2026 TSA 프로모셔널 디자인 부문<br>전국 Top 10</p></article>
+          <article><p class="eyebrow">2026 · TSA Nationals</p><h3>National Top 10</h3><p>Digital Video Production</p><p class="ko" lang="ko">2026 TSA 디지털 비디오 프로덕션 부문<br>전국 Top 10</p></article>
+        </div>
+        <div class="competition-submissions" style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line)">
+          <p class="eyebrow" style="color:var(--yellow)">Competition submissions</p>
+          <h3>Ocean Awareness Contest · NYT Student Competitions</h3>
+          <p class="intro">Student work submitted to the Ocean Awareness Contest (now the Blue Planet Awareness Contest) and The New York Times student competitions.</p>
+          <p class="ko" lang="ko">Ocean Awareness Contest(현 Blue Planet Awareness Contest) 및 뉴욕타임스(NYT) 학생 경연 출품</p>
+        </div>
+        <div class="college-preparation" style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--line)">
+          <p class="eyebrow" style="color:var(--yellow)">College preparation · In progress</p>
+          <h3>Creative projects as extracurricular activities</h3>
+          <p class="intro">Students are developing creative projects as part of their extracurricular activities and college preparation.</p>
+          <p class="ko" lang="ko">디지털 아트 프로젝트를 EC(교과 외 활동)로 발전시키며 대학 진학을 준비하고 있습니다.</p>
+        </div>
+        <p class="detail">Competition and college requirements vary. Participation does not guarantee an award or admission.</p>
+      </section>
+      <section class="chapter wrap" id="programs" aria-labelledby="program-title">
+        <p class="eyebrow">06 · Programs</p><h2 id="program-title">Start with <span class="accent">your goal</span></h2><p class="intro">Choose a direction to discuss in your consultation. Projects and technical practice are shaped around your experience and interests.</p>
+        <div class="grid goal-sequence" aria-label="Explore, develop a project, build a portfolio">
+          <article><svg class="step-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><span class="step-label">01 · Explore</span><h3>I want to explore</h3><p>Try digital image-making, animation or 3D. Discover how you enjoy creating.</p></article>
+          <article><svg class="step-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><span class="step-label">02 · Develop</span><h3>I want to develop a project</h3><p>Turn a personal idea into a focused piece through planning, production and revision.</p></article>
+          <article><svg class="step-connector" viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10H210 M222 10H276 M286 10H319 M328 10H348 M356 10H368 M375 10H397 M390 4L397 10L390 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><span class="step-label">03 · Build</span><h3>I want to build a portfolio</h3><p>Develop original work and document your process around your goals. Discuss competition or college requirements individually.</p></article>
+        </div>
+        <div class="course-paths" aria-labelledby="course-title">
+          <p class="eyebrow">What you can make</p>
+          <h3 id="course-title" class="course-heading">Choose a creative direction</h3>
+          <p class="intro">Explore these areas through a project matched to your goals. The production steps you focus on depend on your starting point and project scope.</p>
+          <div class="course-panels">
+            <article class="course-panel" aria-labelledby="course-1">
+              <div class="course-story"><p class="eyebrow">01 · Creative direction</p><h4 id="course-1">Animation Production</h4><p class="intro">Build a story and bring characters to life.</p><p class="project-examples">Short animation · Character story · Motion sequence</p>
+                <div class="animation-examples" aria-labelledby="animation-example-title">
+                  <h5 id="animation-example-title">One Idea. <span class="accent">One Animated Scene.</span></h5>
+                  <p class="detail">Beginner animation class · Student projects</p>
+                  <p class="detail">Start with an original idea and develop a short animated scene. These projects show different approaches to character, movement and visual storytelling.</p>
+                  <details lang="ko"><summary>초보자를 위한 애니메이션 프로젝트</summary><p class="ko">하나의 아이디어를 한 가지 샷으로 표현하는 과제에서 출발한 수업입니다. 학생들은 캐릭터와 움직임, 시각적 스토리텔링을 활용해 짧은 애니메이션으로 발전시켰습니다.</p></details><div class="process-gallery">
+                    <figure><div class="storyboard-crop"><img src="assets/student-work/animation/storyboard.jpg" loading="lazy" alt="Hand-drawn storyboard planning camera movement and character action"></div><figcaption><span class="accent">01 · Storyboard</span><br>Plan the action and camera movement.</figcaption></figure>
+                    <figure><img src="assets/student-work/animation/design-frame.jpg" loading="lazy" alt="Missing Piece design frame with puzzle character and environment"><figcaption><span class="accent">02 · Design frame</span><br>Develop the character, setting and visual direction.</figcaption></figure>
+                  </div>
+                  <figure class="course-media student-film"><video controls playsinline preload="none" poster="assets/student-work/animation/missing-piece.jpg" aria-label="Beginner animation class showcase — three student projects"><source src="assets/student-work/animation/class-showcase.mp4" type="video/mp4"><a href="assets/student-work/animation/class-showcase.mp4">Watch the class showcase</a></video><figcaption><strong>03 · From idea to motion</strong><span>Get Back Up · Missing Piece · Addiction</span></figcaption></figure></div>
+                <details lang="ko"><summary>애니메이션 제작</summary><p class="ko">스토리텔링과 캐릭터 디자인에서 출발해 움직임을 만들고, 편집과 합성·영상 특수효과로 완성합니다.</p></details>
+              </div>
+              <aside class="course-pipeline" aria-label="Animation Production production pipeline"><p class="eyebrow">Production pipeline</p><ol>
+<li><h5>Story &amp; storyboard</h5><p>Develop the idea, narrative and shot sequence.</p></li>
+<li><h5>Character &amp; visual design</h5><p>Design characters, environments and the visual style.</p></li>
+<li><h5>Animation &amp; motion</h5><p>Build movement, timing and performance.</p></li>
+<li><h5>Edit, composite &amp; finish</h5><p>Combine scenes, sound and visual effects.</p></li>
+</ol></aside></article>
+            <article class="course-panel" aria-labelledby="course-2">
+              <div class="course-story"><p class="eyebrow">02 · Creative direction</p><h4 id="course-2">Video Production</h4><p class="intro">Shape a message through video editing, motion graphics and sound.</p><p class="project-examples">Video essay · Research presentation · Event &amp; sports promo · Camp interview · Motion graphics</p>
+                <div class="video-examples" aria-label="Video production examples"><p class="detail">Selected project excerpts · Short preview edits</p><figure class="course-media student-film"><video controls playsinline preload="none" poster="assets/student-work/video/motion-design-reel.jpg" aria-label="Motion Design Reel"><source src="assets/student-work/video/combined-motion-reel-v2.mp4" type="video/mp4"><a href="assets/student-work/video/combined-motion-reel-v2.mp4">Watch Motion Design Reel</a></video><figcaption><strong>Motion Design Reel</strong><span>Selected excerpts</span></figcaption><p class="detail">Sports promotion openings, typography, graphics and spatial storytelling in one short reel.</p></figure><details lang="ko"><summary>영상 제작 예시 안내</summary><p class="ko">스포츠 홍보영상의 도입부와 다양한 모션 디자인 장면을 하나의 짧은 릴로 구성했습니다. 원본 전체가 아닌 발췌 편집본입니다.</p></details></div>
+                <details lang="ko"><summary>영상 제작</summary><p class="ko">비디오 에세이, 리서치 프레젠테이션, 이벤트·스포츠 프로모션, 캠프 인터뷰 등 목적에 맞는 영상을 기획하고 제작합니다. 영상 편집에 모션 그래픽, 움직이는 타이포그래피, 자막과 사운드를 결합해 메시지를 효과적으로 전달합니다.</p></details>
+              </div>
+              <aside class="course-pipeline" aria-label="Video Production production pipeline"><p class="eyebrow">Production pipeline</p><ol>
+<li><h5>Research &amp; concept</h5><p>Define the audience, message and research.</p></li>
+<li><h5>Script &amp; shot planning</h5><p>Structure the story, questions and shot list.</p></li>
+<li><h5>Footage &amp; editing</h5><p>Capture or select footage and shape the sequence.</p></li>
+<li><h5>Motion graphics &amp; sound</h5><p>Combine animated typography, graphic elements, captions and sound.</p></li>
+</ol></aside></article>
+            <article class="course-panel" aria-labelledby="course-3">
+              <div class="course-story"><p class="eyebrow">03 · Creative direction</p><h4 id="course-3">3D Design &amp; Rendering</h4><p class="intro">Turn ideas into spaces, objects and rendered images.</p><p class="project-examples">Architectural design · Product visualization · Rendered artwork</p>
+                <div class="three-d-examples">
+                  <section aria-labelledby="architecture-example"><p class="eyebrow">Project 01 · Architectural design</p><h5 id="architecture-example">From digital space <span class="accent">to physical form.</span></h5><p class="detail">Green Shelter Design · Modeling, visualization and physical prototyping.</p>
+                    <figure class="three-d-feature"><img src="assets/student-work/3d/architecture-render.png" loading="lazy" alt="Rendered shelter design with curved white roof, seating and planting"><figcaption>Architectural visualization · Digital render</figcaption></figure>
+                    <div class="three-d-process"><figure><img src="assets/student-work/3d/architecture-model.png" loading="lazy" alt="Shelter geometry and planting in Blender"><figcaption><span class="accent">01 · Model</span><br>Develop the structure in 3D.</figcaption></figure><figure><img src="assets/student-work/3d/architecture-print.png" loading="lazy" alt="Shelter components being fabricated on a 3D printer"><figcaption><span class="accent">02 · Prototype</span><br>Bring the digital form into physical space.</figcaption></figure></div>
+                    <details lang="ko"><summary>건축 디자인 · 디지털 공간에서 실물로</summary><p class="ko">쉘터의 구조와 공간을 3D로 모델링하고, 렌더를 통해 형태와 식재를 시각화한 뒤 3D 프린팅으로 실물 모형을 제작하는 과정입니다.</p></details>
+                  </section>
+                  <section aria-labelledby="render-example"><p class="eyebrow">Project 02 · Rendered artwork</p><h5 id="render-example">Build a scene. <span class="accent">Express an idea.</span></h5><p class="detail">A Future Field Trip · Materials, scene composition, lighting and image finishing.</p>
+                    <figure class="three-d-feature"><img src="assets/student-work/3d/render-artwork.png" loading="lazy" alt="Rendered artwork of a whale suspended above discarded objects in a brightly lit room"><figcaption>A Future Field Trip · Finished rendered artwork</figcaption></figure>
+                    <details class="render-breakdown"><summary>Explore the production process</summary><figure class="three-d-feature"><img src="assets/student-work/3d/render-process.png" loading="lazy" alt="Production screenshots showing whale texturing, scene layout in Maya and image finishing in Photoshop"><figcaption>Texturing → Scene layout → Image finishing</figcaption></figure></details>
+                    <details lang="ko"><summary>3D 렌더 작품 · 장면으로 표현하는 아이디어</summary><p class="ko">재질과 장면 구성, 조명, 렌더링, 이미지 후반 작업을 통해 하나의 작품을 완성합니다. 작업 화면과 완성 이미지를 함께 살펴볼 수 있습니다.</p></details>
+                  </section>
+                </div>
+                <details lang="ko"><summary>3D 디자인과 렌더링</summary><p class="ko">건축 공간과 제품, 작품 속 장면을 모델링, 재질, 조명, 렌더링으로 구체화합니다. 현재 예시는 건축 디자인과 렌더 작품으로 구성되어 있습니다.</p></details>
+              </div>
+              <aside class="course-pipeline" aria-label="3D Design and rendering production pipeline"><p class="eyebrow">Production pipeline</p><ol>
+<li><h5>Concept &amp; references</h5><p>Explore architectural spaces, products or ideas for an artwork.</p></li>
+<li><h5>Model &amp; form</h5><p>Develop shapes, proportions and spatial structure.</p></li>
+<li><h5>Materials &amp; lighting</h5><p>Define surfaces, lighting and the atmosphere of the scene.</p></li>
+<li><h5>Render &amp; present</h5><p>Render the work and prepare the final presentation.</p></li>
+</ol></aside></article>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--line);padding-top:2rem;margin-top:2rem"><h3>Technical Foundations</h3><p class="intro">Some tools need dedicated practice. Make time for digital image-making, motion workflows or 3D fundamentals before and alongside a larger project.</p><p class="detail">Your starting point and tools will be discussed during consultation.</p></div>
+        <details lang="ko"><summary>나에게 맞는 시작점 찾기</summary><p class="ko">창작 탐색, 개인 프로젝트, 포트폴리오 중 자신의 목표에서 출발합니다. 도구에 익숙해질 시간이 필요하다면 Technical Foundations에서 기초를 충분히 연습하고 프로젝트와 연결합니다. 구체적인 구성은 상담을 통해 정합니다.</p></details>
+        <a class="text-link" href="#consultation">Discuss your goals →</a>
+      </section>
+      <section class="chapter wrap" id="beyond" aria-labelledby="beyond-title">
+        <p class="eyebrow">07 · Beyond the classroom</p><h2 id="beyond-title">Take your creativity <span class="accent">further</span></h2><p class="intro">Use what you learn in personal projects, school activities and future creative study. Practice presenting ideas, responding to feedback and working through unfamiliar problems.</p>
+        <div class="youtube-feature" id="youtube" aria-labelledby="youtube-title">
+          <img class="youtube-logo" src="assets/brand/meetdigitalart-logo.png" width="112" height="112" loading="lazy" alt="Meet Digital Art logo">
+          <div>
+            <p class="eyebrow">On YouTube</p>
+            <h3 id="youtube-title"><span class="brand-name">meetdigital<span>art.</span></span></h3>
+            <p class="youtube-status">New videos coming soon.</p>
+            <a class="text-link" href="https://www.youtube.com/channel/UCsibsQ9cxVY44xzcw0DHnSA" target="_blank" rel="noopener noreferrer">Visit our YouTube channel ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="consultation" aria-labelledby="consult-title">
+      <div class="wrap">
+
+        <div>
+          <p class="eyebrow" style="color:var(--bg)">08 · Consultation</p>
+          <h2 id="consult-title">Let's find your starting point</h2>
+
+          <p>
+            For a free introductory consultation,
+            send us a message on Instagram.
+          </p><p lang="ko">관심 분야와 목표를 함께 이야기해 보세요. 한국어 상담도 문의하실 수 있습니다.</p>
+        </div>
+
+        <a
+          href="https://www.instagram.com/meetdigitalart/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-button">
+          Instagram @meetdigitalart ↗
+        </a>
+
+      </div>
+    </footer>
+
+  </div>
+  <script src="sequence-frame-config.js" defer></script>
+  <script src="sequence-player.js" defer></script>
+  <script src="motion.js" defer></script>
+</body>
+</html>
