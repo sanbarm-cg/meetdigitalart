@@ -1,0 +1,30 @@
+#consultation .consultation-layout { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); align-items:start; gap:clamp(2rem,6vw,6rem); padding-top:1.5rem; padding-bottom:1.5rem; }
+.consultation-intro h2 { margin-bottom:1.5rem; }
+.consultation-intro p+p { margin-top:1rem; }
+.consultation-email { display:inline-block; margin-top:1.5rem; font-weight:650; text-decoration:underline; text-underline-offset:.25em; overflow-wrap:anywhere; }
+.consultation-form { display:grid; gap:1.3rem; min-width:0; }
+.consultation-fields { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.consultation-form label { display:grid; gap:.5rem; font-size:.92rem; font-weight:700; }
+.consultation-form label span { font-size:.78rem; font-weight:450; }
+.consultation-form input,.consultation-form select,.consultation-form textarea { width:100%; min-width:0; border:1px solid #5b420d; border-radius:2px; padding:.85rem 1rem; font:inherit; font-size:16px; color:#0d0e12; background:#fff8e5; }
+.consultation-form textarea { resize:vertical; min-height:9rem; }
+.consultation-form input:focus-visible,.consultation-form select:focus-visible,.consultation-form textarea:focus-visible { outline:2px solid #0d0e12; outline-offset:3px; }
+.consultation-form .contact-button { cursor:pointer; border:0; justify-self:start; }
+.consultation-form .contact-button:disabled { cursor:default; opacity:.7; }
+.consultation-form .consultation-privacy,.consultation-form .consultation-status { font-size:.78rem; line-height:1.6; }
+.consultation-privacy a { text-decoration:underline; text-underline-offset:.2em; }
+.contact-honey { display:none; }
+.youtube-bottom { padding-top:3rem; padding-bottom:3rem; }
+.youtube-bottom .youtube-feature { margin-top:0; padding-top:0; border-top:0; }
+@media(max-width:800px) { #consultation .consultation-layout { grid-template-columns:1fr; } }
+@media(max-width:480px) { .consultation-fields { grid-template-columns:1fr; } .consultation-form .contact-button { width:100%; } }
+
+.consultation-dm { margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid #0d0e1240; }
+.consultation-dm p { font-size:.85rem; margin-bottom:.8rem; }
+.consultation-dm .contact-button { font-size:.9rem; padding:.7rem 1rem; }
+.social-bottom { display:grid; grid-template-columns:1.2fr 1fr; gap:3rem; align-items:center; }
+.instagram-feature { border-left:1px solid var(--line); padding-left:3rem; }
+.instagram-feature h3 { margin:.5rem 0; font-size:clamp(1.4rem,2.5vw,2rem); }
+.instagram-feature p:not(.eyebrow) { color:var(--muted); font-size:.9rem; }
+.instagram-feature .eyebrow { margin:0; }
+@media(max-width:800px) { .social-bottom { grid-template-columns:1fr; gap:2rem; } .instagram-feature { border-left:0; border-top:1px solid var(--line); padding-left:0; padding-top:2rem; } }
