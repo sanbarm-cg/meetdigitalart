@@ -1,4 +1,4 @@
-/* Standard form POST: FormSubmit verifies the request and delivers the inquiry. */
+/* Standard form POST: FormSubmit processes and delivers the inquiry. */
 (() => {
  const form=document.querySelector('#consultation-form');if(!form)return;
  form.addEventListener('submit',event=>{
@@ -7,6 +7,6 @@
    event.preventDefault();status.textContent='Email connection is not active yet. / 메일 연결 준비 중입니다.';
    return;
   }
-  status.textContent='Opening secure verification… / 전송 확인 화면으로 이동합니다…';
+  status.textContent='Sending your request… / 상담 요청을 전송하고 있습니다…';
  });
 })();
