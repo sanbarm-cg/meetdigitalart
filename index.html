@@ -739,22 +739,20 @@
           <a class="consultation-email" href="mailto:thinkbitsny@gmail.com">thinkbitsny@gmail.com ↗</a>
           <div class="consultation-dm"><p>Prefer a direct message? <span lang="ko">DM으로 문의하셔도 됩니다.</span></p><a class="contact-button" href="https://www.instagram.com/meetdigitalart/" target="_blank" rel="noopener noreferrer">Instagram DM ↗</a></div>
         </div>
-        <form class="consultation-form" id="consultation-form" action="https://formsubmit.co/thinkbitsny@gmail.com" data-mode="live" method="POST" aria-describedby="consultation-privacy">
-          <input type="hidden" name="_subject" value="Meet Digital Art — consultation request">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_url" value="https://meetdigitalart.com/">
-          <input type="hidden" name="_next" value="https://meetdigitalart.com/thanks.html">
-          <div class="contact-honey" aria-hidden="true"><label for="contact-website">Leave this blank</label><input id="contact-website" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <form class="consultation-form" id="consultation-form" action="https://api.web3forms.com/submit" data-mode="live" method="POST" aria-describedby="consultation-privacy">
+          <input type="hidden" name="access_key" value="4dfdb029-3d52-409f-9eab-dad8662f85ca">
+          <input type="hidden" name="subject" value="Meet Digital Art — consultation request">
+          <input type="hidden" name="redirect" value="https://meetdigitalart.com/thanks.html">
+          <div class="contact-honey" aria-hidden="true"><label for="contact-website">Leave this blank</label><input id="contact-website" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none"></div>
           <div class="consultation-fields">
             <label for="contact-name">Name <span lang="ko">이름</span><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" required></label>
             <label for="contact-email">Email <span lang="ko">회신 이메일</span><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></label>
           </div>
           <label for="contact-interest">Interested in <span lang="ko">관심 수업</span><select id="contact-interest" name="interest" required><option value="">Choose an area / 관심 분야 선택</option><option>Digital art</option><option>Animation</option><option>Video &amp; motion graphics</option><option>3D design &amp; rendering</option><option>Portfolio &amp; project guidance</option><option>Not sure yet / 상담 후 결정</option></select></label>
           <label for="contact-message">Your message <span lang="ko">상담 내용</span><textarea id="contact-message" name="message" rows="5" maxlength="4000" required placeholder="Tell us about your interests, experience and goals. / 관심 분야와 목표를 알려주세요."></textarea></label>
-          <p class="consultation-privacy" id="consultation-privacy">Your name, email and message will be processed by FormSubmit and emailed to Meet Digital Art to respond to your inquiry. Please do not include sensitive personal information.<br><span lang="ko">입력한 정보는 FormSubmit을 통해 상담 답변 목적으로 전달됩니다.</span> <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">Privacy</a></p>
+          <p class="consultation-privacy" id="consultation-privacy">Your name, email and message will be processed by Web3Forms and emailed to Meet Digital Art to respond to your inquiry. Please do not include sensitive personal information.<br><span lang="ko">입력한 정보는 Web3Forms을 통해 상담 답변 목적으로 전달됩니다.</span> <a href="https://web3forms.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a></p>
           <button class="contact-button" type="submit">Send consultation request ↗</button>
-          <p class="consultation-status" id="consultation-status" role="status" aria-live="polite">After sending, please wait for the confirmation page. / 전송 후 완료 화면이 나올 때까지 기다려 주세요.</p>
+          <p class="consultation-status" id="consultation-status" role="status" aria-live="polite">Your confirmation will appear here after sending. / 전송 후 접수 결과가 여기에 표시됩니다.</p>
         </form>
       </div>
     </footer>
@@ -780,6 +778,6 @@
   <script src="sequence-frame-config.js" defer></script>
   <script src="sequence-player.js" defer></script>
   <script src="motion.js" defer></script>
-  <script src="consultation.js" defer></script>
+  <script src="consultation.js?v=web3forms-1" defer></script>
 </body>
 </html>
